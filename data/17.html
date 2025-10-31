@@ -1,0 +1,386 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/fav/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:image" content="http://3icecream.com/fav/android-chrome-256x256.png" />
+<meta property="og:image:secure_url" content="https://3icecream.com/fav/android-chrome-256x256.png" />
+
+
+<title>LEVEL 17 シングルプレイ 難易度表 - 三倍 Ice Cream</title>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+<LINK rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Inconsolata'/>
+<LINK rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/earlyaccess/sawarabigothic.css'/>
+<link rel="stylesheet" type="text/css" href="/css/difficulty_list.css">
+<link rel="stylesheet" type="text/css" href="/css/m_difficulty_list.css">
+<link rel="stylesheet" type="text/css" href="/css/jp_difficulty_list.css">
+<link rel="stylesheet" type="text/css" href="/css/song_selector.css">
+<link rel="stylesheet" type="text/css" href="/css/common.css">
+<link rel="stylesheet" type="text/css" href="/css/m_common.css">
+<link rel="stylesheet" type="text/css" href="/css/jp_common.css">
+<link rel="stylesheet" type="text/css" href="/css/themes/default.css">
+<link rel="stylesheet" type="text/css" href="/css/song_details_ddr.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/lib/html2canvas.min.js"></script>
+<script src="/lib/sweetalert2.all.min.js"></script>
+
+<script src="/js/difficulty_list.js"></script>
+<script src="/js/songdata.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/arcade_compare.js"></script>
+<script src="/js/autocomplete.js"></script>
+
+<script src="/js/songdata_loader.js"></script>
+<script src="/js/score_loader.js"></script>
+<script src="/js/song_selector.js"></script>
+
+<script type="text/javascript">
+   var xpstr_common = {VERY_RECENTLY:"ごく最近",n_MINS_AGO:"{n}分前",n_HOURS_AGO:"{n}時間前",n_DAYS_AGO:"{n}日前",n_YEARS_AGO:"{n}年前",SOME_TIME_IN_THE_FUTURE:"将来いつか",SHORT_MONTH_1:"1",SHORT_MONTH_2:"2",SHORT_MONTH_3:"3",SHORT_MONTH_4:"4",SHORT_MONTH_5:"5",SHORT_MONTH_6:"6",SHORT_MONTH_7:"7",SHORT_MONTH_8:"8",SHORT_MONTH_9:"9",SHORT_MONTH_10:"10",SHORT_MONTH_11:"11",SHORT_MONTH_12:"12",SHORT_DAY_OF_WEEK_0:"日",SHORT_DAY_OF_WEEK_1:"月",SHORT_DAY_OF_WEEK_2:"火",SHORT_DAY_OF_WEEK_3:"水",SHORT_DAY_OF_WEEK_4:"木",SHORT_DAY_OF_WEEK_5:"金",SHORT_DAY_OF_WEEK_6:"土",DATE_FORMAT_y_m_d:"{y}年{m}月{d}日",DATE_FORMAT_w_y_m_d_h_M_s_tz:"{y}年{m}月{d}日({w}) {h}:{M}:{s} {tz}",NO_SCORES_TO_SHOW:"スコアなし",LOADING_MSG:"少しお待ちください",SINGLES_TOOLTIP:"シングルプレイスコア表示",DOUBLES_TOOLTIP:"ダブルプレイスコア表示",UNKNOWN_TITLE:"曲名不明",UNKNOWN_ARTIST:"アーティスト不明",DDR_VERSION_0:"?",DDR_VERSION_1:"1st",DDR_VERSION_2:"2nd",DDR_VERSION_3:"3rd",DDR_VERSION_4:"4th",DDR_VERSION_5:"5th",DDR_VERSION_6:"MAX",DDR_VERSION_7:"MAX2",DDR_VERSION_8:"Extreme",DDR_VERSION_9:"SuperNOVA",DDR_VERSION_10:"SuperNOVA2",DDR_VERSION_11:"X",DDR_VERSION_12:"X2",DDR_VERSION_13:"X3 vs 2nd",DDR_VERSION_14:"2013",DDR_VERSION_15:"2014",DDR_VERSION_16:"A",DDR_VERSION_17:"A20",DDR_VERSION_18:"A20 PLUS",DDR_VERSION_19:"A3",DDR_VERSION_20:"WORLD",DDR_ERA_0:"CLASSIC",DDR_ERA_1:"WHITE",DDR_ERA_2:"GOLD",DIFF_0:"習",DIFF_1:"楽",DIFF_2:"踊",DIFF_3:"激",DIFF_4:"鬼",DIFF_5:"楽",DIFF_6:"踊",DIFF_7:"激",DIFF_8:"鬼",MSG_SWITCH_TO_SP_VIEW:"シングルプレイスコア表示へ変更？",MSG_SWITCH_TO_DP_VIEW:"ダブルプレイスコア表示へ変更？",SWITCH_SPDP_VIEW_ERROR_MSG:"エラー発生。後でもう一度試してください。",SWITCH:"変更",CLICK_TO_ADD_SCORE:"クリックしてスコアを入れる",NO_SCORE:"未プレイ",TIER_0:"Expert 1",TIER_1:"Expert 2",TIER_2:"Expert 3",TIER_3:"Expert 4",TIER_4:"Expert 5",TIER_5:"Master 1",TIER_6:"Master 2",TIER_7:"Master 3",TIER_8:"Master 4",TIER_9:"Master 5",TIER_10:"Legend 1",TIER_11:"Legend 2",TIER_12:"Legend 3",TIER_13:"Legend 4",TIER_14:"Legend 5",APP_LOGGING_IN_MSG:"ログイン中...",FLARE_SKILL_0:"-",FLARE_SKILL_1:"I",FLARE_SKILL_2:"II",FLARE_SKILL_3:"III",FLARE_SKILL_4:"IV",FLARE_SKILL_5:"V",FLARE_SKILL_6:"VI",FLARE_SKILL_7:"VII",FLARE_SKILL_8:"VIII",FLARE_SKILL_9:"IX",FLARE_SKILL_10:"EX",OKAY:"保存",CANCEL:"やめる",SEARCH:"検索",LEVEL_n:"LEVEL {n}",SINGLE_PLAY:"シングルプレイ",DOUBLE_PLAY:"ダブルプレイ",ERR_WRONG_PASSWORD:"入力したパスワードが間違っています。もう一度試してみてください。",};
+</script>
+
+<script type="text/javascript">
+
+const COMPARE_MODE = 'ARCADE';
+const showRomanizedTitles = false;
+
+let difficultyList = {"00obPO6oPIPOoD9qb0dIl6q6D8P6o9bI/3":{"tier":0.55,"rating":0.223515},"06DO8bb0O891IQ9QP01diqOOl0D80QbO/4":{"tier":0.75,"rating":0.511952},"06lOillb6id0Dib9o1b06iPblqPl61PI/3":{"tier":0.5,"rating":0.166005},"08O1i8ib1lDPbdOoPlD069PoOI1860qi/3":{"tier":0.4,"rating":0.0423807},"09looidO89Q9DiDdqQiDPlIQDoiobobQ/4":{"tier":0.6,"rating":0.308454},"09P10l1q98b1DiDQdlIii0bld111O86D/3":{"tier":0.2,"rating":-0.262783},"0b8lD690qQO1bDOib1IqiO0OO169o9IQ/4":{"tier":0.1,"rating":-0.418425},"0DDo1ilPDQoIoPd8ol9OPO1IPbi9ii6d/4":{"tier":0.35,"rating":-0.0244234},"0IldoDlDQql99DqQo0Qq9ioPIiiPoIoi/3":{"tier":0.6,"rating":0.281344},"0Pd8il0PQd80i1O01i1D9960IdqoQo01/4":{"tier":0.8,"rating":0.55683},"0QI6ODo0bPq6Io8ibP16d6I81dbI6oDi/4":{"tier":0.45,"rating":0.0906143},"18l0blb188Oqqi8I68o8oq91Qbq86QDi/4":{"tier":0.35,"rating":-0.0278575},"1I9ODbQ81qi1006QoQI6d6dbd9iiPD9O/4":{"tier":0.65,"rating":0.375992},"1IdqDqDdd08dboO911P6OQ8lobb16PDd/3":{"tier":0.65,"rating":0.380403},"1IQ16dPQPQ0Q1qdidld6lO1o86q98o69/4":{"tier":0.4,"rating":0.0242553},"1o6dQqq9P8IQ6PbQO88OI1b91P9DoqQ8/4":{"tier":0.4,"rating":-0.0133272},"1qPIiqqQo0P9dD90I11q90b0ooIidbPO/4":{"tier":0.7,"rating":0.40762},"60P9IPOdi1OIbD61D8i0D9ODoq6QOIPO/4":{"tier":0.4,"rating":-0.00266159},"61Db8oi9d9bOIlloq8dqI8O000ilDb08/3":{"tier":0.2,"rating":-0.276769},"688O16o80Iib0DPI8oQOIOdbIdQq0P1Q/3":{"tier":0.5,"rating":0.171284},"68iObo1dP91oqDQ18iiiPQDDb8O6ddq6/3":{"tier":0.1,"rating":-0.412087},"6d8DiDl0i1oldbbo0o60PQ0q96d608Dq/4":{"tier":0.7,"rating":0.442751},"6DQ9D9oi66I8ODi8o0dPdOD1ibbIqIdI/3":{"tier":0.4,"rating":-0.00384332},"6i99bQI11qD818DDdq6qb0Dql880lP8l/4":{"tier":0.45,"rating":0.0904226},"6ID160b99ibbd9OoblD0DPOl98lPbq6D/4":{"tier":0.7,"rating":0.450366},"6Obi001oi9Qd1966dOd6d6Qo66dbbill/4":{"tier":0.45,"rating":0.065777},"6OIoOPDb9iI8i1Do9qQ96Q0ddOdd6q9i/4":{"tier":0.85,"rating":0.647925},"6PoillDiqb0Oo9qOiIDOb1qQQIbPqDoi/4":{"tier":0.7,"rating":0.412562},"6QQ1OdO99Ob001OQ90iP86o0I8OoQbib/4":{"tier":0.5,"rating":0.143198},"8d9Q0olQ980lQdPIdqbIiD8o1l1dQPI0/3":{"tier":0.55,"rating":0.219311},"8iiqQ9o1P089901DPIq8PDPOl6oDOl1P/4":{"tier":0,"rating":-0.592529},"8ql0DIiI0D9D1OP0qb8olo9bIQdP0ddq/3":{"tier":0.05,"rating":-0.470066},"919bPoOo9QO6dODOI6d0loO6qo6OqDlI/3":{"tier":0.2,"rating":-0.296512},"96d9qiDD8l09DQq6O1DO6O6I1IdP8q0D/3":{"tier":0.55,"rating":0.253507},"99OQb9b0IQ98P6IQdPOiqi8q16o16iqP/3":{"tier":0.5,"rating":0.167089},"99q8i8bPldDbio919ob0DPi0bqdIoobi/3":{"tier":0.6,"rating":0.2657},"9b60DI1OQddDI6D9D1qPoDPODD19Db8d/3":{"tier":0,"rating":-0.590279},"9ddIP1i0O6l8oO9iI9Ii1Q1o800boQ0D/4":{"tier":0.65,"rating":0.333023},"9dI8ilPi9bd9blI6Q8D6IPb1lblqDl1Q/3":{"tier":0.4,"rating":-0.000924902},"9DoD10OPQ999IlP0doo69olbOQ680q09/3":{"tier":0.65,"rating":0.351335},"9i6dOd608qb0IlqoDIPb8q1o8q1ddQQd/4":{"tier":0.65,"rating":0.37886},"9IdoP1ld9098PI90QQ6bP0Idl1ibo80D/3":{"tier":0.1,"rating":-0.40342},"9ioI0IQ16OPb1Q0q8Oqdd6D9dPqDb618/4":{"tier":0.85,"rating":0.649101},"9oIO98IPOiq1idiIIbOOqdDQIOdQPPd6/4":{"tier":0.5,"rating":0.169334},"9oll10Dq1qdbPQl68OQ8dOd9q86999i1/4":{"tier":0.45,"rating":0.0722217},"9PO0qPdi1OQo68Qb09qdIOo6008QoIPq/4":{"tier":0.95,"rating":0.83006},"b0o6bl18Q1bqI9o9oqQ9POoP8DiDDibP/3":{"tier":0.65,"rating":0.365908},"b16OP1o9qb6bQd66qOl98iq0boiQP919/4":{"tier":0.8,"rating":0.576951},"b1QllqO8oQdqo086QdIlIblDDbPodDoP/3":{"tier":0.4,"rating":0.0332053},"bd8OODli0POo9bOq6i0oIPdIlbDlI910/3":{"tier":0.45,"rating":0.0950517},"bdP0IOiPiQ8OlIbD1QQO8O6dPQqqb1Qb/4":{"tier":0.55,"rating":0.200033},"bl90QbiqoOlDI6iQQQdo0Iol6PIdQblP/3":{"tier":0.55,"rating":0.207819},"bll06Di6q1QOlddDlPDPiQDDI09bOOoP/3":{"tier":0.4,"rating":0.000680744},"bo6PqbbPQ6D096OIP6dDPbPPiDi88609/4":{"tier":0.65,"rating":0.375883},"boqo0IoO8DodOl99Q8P8qOi8PqDq11b1/4":{"tier":0.8,"rating":0.563288},"D08lqQOPdOO6D6ll690Qd6PdbO111011/3":{"tier":0.5,"rating":0.166334},"d10d86DQqqd6QDlQlOI1bQi9do66l8Od/4":{"tier":0.45,"rating":0.0552518},"D6IQ1O1D00D1o8IQq0O9qqIibqDiiO0i/4":{"tier":0.6,"rating":0.277683},"d810q0I8q6d0l1POlIO6d66bOPb96dql/3":{"tier":0.5,"rating":0.185649},"D89QP18016o01qoOi60I6Q19dlOQPbdo/3":{"tier":0.55,"rating":0.235441},"D8q1ObblD0i6liQ0OD6OdD0qIo9oPldb/3":{"tier":0.3,"rating":-0.11923},"D9lq0DioIl9D6ll0d61990DP9qPPb1dP/4":{"tier":0.1,"rating":-0.433487},"db6q6DlPd68bbQOOQ99OI1I9QD8PqDo8/4":{"tier":0.25,"rating":-0.1872},"dbIQ6o1lDi1OqqdO60q0lqqD9qPD0qlP/4":{"tier":0.95,"rating":0.810448},"DdIo9DQ0ddDld99DQdiiqbPP06OI91I0/3":{"tier":0.1,"rating":-0.405515},"dDlDPddq08iD8IOb9I1PbODP9696966D/4":{"tier":0,"rating":-0.522178},"ddqQ801q1lIdIooDiq66qPil1oD0611I/4":{"tier":0.4,"rating":0.0198891},"dDQqqIQlDQ9POd90OPl9Dd1i106odDl0/4":{"tier":0.6,"rating":0.275929},"Di0ODIlddo8d90oo09qqd98QObQP1llI/3":{"tier":0.65,"rating":0.354229},"dIdDQD1Q8oPQ90Q1DPbiQI661qD9oi6I/4":{"tier":0.6,"rating":0.288378},"diq9D0qbI00iOOb69q6Q1Q90PQOlo6dl/3":{"tier":0.25,"rating":-0.214123},"Dl91ldlb8PODoO96OI801DP0PPl8Plqi/4":{"tier":0.1,"rating":-0.406362},"Dlo0PPibIoQbOI8I61O1DobQOIiDb11b/4":{"tier":0.55,"rating":0.194765},"dOb880lOloIIod00PQ1iQOQqlOOQ0Ql0/3":{"tier":0.1,"rating":-0.382868},"dPI9loII89Q6P6iD6Ioo1iiI880DI1Dd/3":{"tier":0.5,"rating":0.149081},"Dqb69lDiP6diId6O8Q0I6bbQI88lPlb0/4":{"tier":0.5,"rating":0.121499},"dQODIo01o98oPll086Qdol8bq9QP8d61/3":{"tier":0.55,"rating":0.197661},"dQPPd10QO9d8IiOiIi8iDD1Qdq8lQli0/3":{"tier":0.2,"rating":-0.269584},"dqQbQ9oPlIi6bDdi18d9qPlDb0PiDddi/3":{"tier":0,"rating":-0.533403},"I0091lboOD1Dii10dQ0qbDqil69PQ0io/4":{"tier":0.2,"rating":-0.27662},"i080lP1QqIiO998qPl888qboIiIDdiD1/3":{"tier":0.55,"rating":0.235989},"I0dOli6do1l1008I8PllOq8DoOoIO8oq/3":{"tier":0.9,"rating":0.694938},"i0Q0o98q0DqbbiDd6966QIIoddlob6lI/3":{"tier":0.7,"rating":0.449478},"I0qiD6Ob86D1oQOib81lID6Dll8iOOOP/4":{"tier":0.5,"rating":0.142641},"i6bl89d6OOi1O00qlQOIl8b8Qld6IiQP/3":{"tier":0.4,"rating":-0.0212848},"i8II16blIIbQQd196b616OPbPO910oi9/4":{"tier":0.8,"rating":0.58548},"I9Oood9l9li0D08Q6d6DQPiIQiloidO6/4":{"tier":0.65,"rating":0.35211},"i9PQoDbQI0qqd6I00d19bQo6q9PoOIbO/4":{"tier":0.65,"rating":0.350862},"IPq8dO1lD8qidDlI0ObboI9IIldQO6IQ/4":{"tier":0.4,"rating":-0.00906716},"IQ0ID09qD6O1oOdIq0oilI8I8l9DlP9b/4":{"tier":0.55,"rating":0.200553},"IqPq866IQD0liq9lOl00qDqiPlq9bOD0/4":{"tier":0.35,"rating":-0.0240808},"IQqi9Q9qD0DDQIqQOb868QIOioqDqI01/3":{"tier":0.3,"rating":-0.152315},"l666Dd0bIO9O69boPd898b19bPDo1IdO/4":{"tier":0.8,"rating":0.572944},"l6d0ibbliQPQDdb1lP18D9qbPDi1698b/3":{"tier":0.35,"rating":-0.0821607},"l9QibD8IoooD9DIl1O8Q0lo89I9qdido/3":{"tier":0.8,"rating":0.5942},"lliDD9qPqiIDI8P9bb18IO60l9D061Io/3":{"tier":0.65,"rating":0.399997},"loD8qPl09qqi0o1iqbbDOdllDblioDIl/3":{"tier":0.25,"rating":-0.229129},"o068b00O6QD8lo9O1i9PbQlqO6IQOidD/3":{"tier":0.35,"rating":-0.05444},"o0l1Qioq1i9iQl6b9q6il0iqi1b1OQ9b/3":{"tier":0.7,"rating":0.434285},"o1biqbO9i1IiObD0d1D8d8iqb6q86Qqi/3":{"tier":0.15,"rating":-0.36037},"O6llIdODQD6oDQ6QiPQDOlob9i8l6qib/3":{"tier":0.6,"rating":0.302398},"o89biodIl0Oo1bQqll86QDi0oQQd61Db/3":{"tier":0.4,"rating":-0.00366107},"O9Odqd8qiQiOqQdOOq01D8OQlOiO1iPD/3":{"tier":0.1,"rating":-0.423619},"O9qDQOQO8dDDIiO9dPP0Pb8qQo9l89D9/3":{"tier":0.9,"rating":0.748531},"ob6IPbiqD969Q66808obd908DI81bqPi/3":{"tier":0,"rating":-0.521413},"Od6bOOb69PqbqPdb6lO1QI66DOqo0POO/3":{"tier":0.55,"rating":0.235929},"OddDoQ6dqi0QdQDDOO6qlO08d8bPbli1/3":{"tier":0.8,"rating":0.596714},"OdlOPPblPlbbldOdqblI06Dd1q00PPo9/4":{"tier":0.3,"rating":-0.154898},"odPq866q0QPOP9QOQ9QQIlIO60Oid16o/4":{"tier":0.4,"rating":0.0102953},"OiIOPd80d9PQQIbidO6ObioboO88OD9l/3":{"tier":0.1,"rating":-0.399898},"Ol8PPooqO8iOqQ6900o0q0QI9dPo0O0b/4":{"tier":0.3,"rating":-0.102549},"OlDo09P8l0d6d80i8qD0qQddbi0QQD8b/4":{"tier":0.6,"rating":0.312292},"oOI88lollO1OOQQd9DPi0690I6i6oiII/4":{"tier":0.55,"rating":0.220501},"OPbd0ldd89Ddll690qiObDld9oDdPdOi/3":{"tier":0.2,"rating":-0.274763},"oQ868oOio6O90i9qO1o8I96P1do11ID0/3":{"tier":0.5,"rating":0.144871},"OQO1Di8IQIQqP1d81d1ID9QD110b0888/3":{"tier":0.5,"rating":0.124814},"P06O6iQbiPPqiIqOd0IQdqolbPbDId6Q/3":{"tier":0.55,"rating":0.207989},"P1boP1O60bdI16i6lqqd1Q8ioiPbolqd/4":{"tier":0.15,"rating":-0.330631},"P6id8qqolbP0oqO060OOqbl60DI9iQoQ/3":{"tier":0.3,"rating":-0.133849},"Pd8bD1od1iOOl80oOiiiIb9QdqIQQllQ/3":{"tier":0.9,"rating":0.725789},"PDbDl9dQQQiold81d9DQ6QQobQqb1OO8/4":{"tier":0.35,"rating":-0.0307521},"PdD1dlq1q00q8o9Il6IIqi61Il9DIo61/3":{"tier":0.25,"rating":-0.21204},"PIO8dod8P9OOP1bi0D1POIi6OdOdQDql/3":{"tier":0.95,"rating":0.780831},"PIP60POo0dDQlIiqO9bIQ1oddQD8P9Il/4":{"tier":0.4,"rating":-0.00216001},"POq8OPlOO9199i11Od0P00801Qo01DQo/3":{"tier":0.35,"rating":-0.0823204},"PP9QDQ0IQQID00P61d8qdDdP09b19iiI/4":{"tier":0.1,"rating":-0.399359},"PPb6l1di1Pi0o8O08odqIDlbPll61QbQ/3":{"tier":0.9,"rating":0.704975},"q6di1DQbi88i9QlPol1iIPbb8lP1qP1b/3":{"tier":0.05,"rating":-0.512826},"Q8b91l6od9bq6IPqlddiP0bb0l1iqD8I/4":{"tier":0.55,"rating":0.250283},"Q8bIDb60oPo890oi0l0O9PQd9lOb8o1Q/3":{"tier":0.7,"rating":0.447262},"Q8PqoP91qqI6I909IdQ098091q9q0i19/4":{"tier":0.6,"rating":0.293803},"q8QPqbiQ00i6odq81P0D960I108bIiQb/4":{"tier":0.6,"rating":0.299806},"q96q9D9oIIOQl8QQ60ii19P0Dbq8Q609/3":{"tier":0.3,"rating":-0.129536},"Q99q619i0lDqll6Q0lq8l1oQ0qPO8o6I/3":{"tier":0.5,"rating":0.152602},"Q9iiOo800blDqO0DDDPI1PIbl1lIidI1/3":{"tier":0.65,"rating":0.343658},"Q9Q088PPd0bPi9QQ8iil1lQqPdiQP69D/4":{"tier":0.15,"rating":-0.309367},"QD9Ib18D9lIO10O19d16PbPb68q1190d/3":{"tier":0,"rating":-0.555989},"QlQ10I6o1l88loioo6DIObi0P09PPdiD/3":{"tier":0.25,"rating":-0.203005},"QoODOoqDli0bOoqqDo8ODo1lDI9llblo/3":{"tier":0.5,"rating":0.13803},"qP8qb6lIqPIlO696q8881qoIqi1O6ldI/3":{"tier":0.25,"rating":-0.219099},"qqdlo1QOQo6QIi8PqOi8iIOO0il1IblQ/4":{"tier":0.65,"rating":0.350888},"QQldo10ObPPQPlliODiDIIl0Q1oPoo61/3":{"tier":0.35,"rating":-0.0895295},"QQldo10ObPPQPlliODiDIIl0Q1oPoo61/4":{"tier":0.85,"rating":0.638162}};
+let rawMetadata = [{"song_id":"00obPO6oPIPOoD9qb0dIl6q6D8P6o9bI","difficulty":3,"youtube_id":"P8DDRUZQV4E","has_sm":1},{"song_id":"00obPO6oPIPOoD9qb0dIl6q6D8P6o9bI","difficulty":7,"youtube_id":"c2mDYTdflsU","has_sm":1},{"song_id":"06DO8bb0O891IQ9QP01diqOOl0D80QbO","difficulty":4,"youtube_id":"iodmc1DS6t0","has_sm":1},{"song_id":"06DO8bb0O891IQ9QP01diqOOl0D80QbO","difficulty":8,"youtube_id":"ge-NWItkkco","has_sm":1},{"song_id":"06lOillb6id0Dib9o1b06iPblqPl61PI","difficulty":3,"youtube_id":"KYGq1CKy9Xc","has_sm":1},{"song_id":"06lOillb6id0Dib9o1b06iPblqPl61PI","difficulty":7,"youtube_id":"IagYe3-LFAA","has_sm":1},{"song_id":"08O1i8ib1lDPbdOoPlD069PoOI1860qi","difficulty":3,"youtube_id":"118Zw5x_3E8","has_sm":1},{"song_id":"08O1i8ib1lDPbdOoPlD069PoOI1860qi","difficulty":7,"youtube_id":"sGnkdrCB2gw","has_sm":1},{"song_id":"09looidO89Q9DiDdqQiDPlIQDoiobobQ","difficulty":4,"youtube_id":"38l8AYgxTQc","has_sm":1},{"song_id":"09looidO89Q9DiDdqQiDPlIQDoiobobQ","difficulty":8,"youtube_id":"Yt5lH2a_VFo","has_sm":1},{"song_id":"09P10l1q98b1DiDQdlIii0bld111O86D","difficulty":3,"youtube_id":"lVXmyKlyTg0","has_sm":1},{"song_id":"09P10l1q98b1DiDQdlIii0bld111O86D","difficulty":7,"youtube_id":"aLCxSvB9vUE","has_sm":1},{"song_id":"0b8lD690qQO1bDOib1IqiO0OO169o9IQ","difficulty":4,"youtube_id":"nsVwmUKDnbs","has_sm":1},{"song_id":"0b8lD690qQO1bDOib1IqiO0OO169o9IQ","difficulty":8,"youtube_id":"PoW7Y_xPx0k","has_sm":1},{"song_id":"0DDo1ilPDQoIoPd8ol9OPO1IPbi9ii6d","difficulty":4,"youtube_id":"ZSAnQADrlnE","has_sm":1},{"song_id":"0DDo1ilPDQoIoPd8ol9OPO1IPbi9ii6d","difficulty":8,"youtube_id":"342z6Ue3QX0","has_sm":1},{"song_id":"0IldoDlDQql99DqQo0Qq9ioPIiiPoIoi","difficulty":3,"youtube_id":"ivw8oP2jzuk","has_sm":1},{"song_id":"0Ilqbl8q8Q6l6886Q9P9DOi69oIb1b1d","difficulty":7,"youtube_id":"1o6q-94_btE","has_sm":1},{"song_id":"0Pd8il0PQd80i1O01i1D9960IdqoQo01","difficulty":4,"youtube_id":"eO6Ib31OPg4","has_sm":1},{"song_id":"0Pd8il0PQd80i1O01i1D9960IdqoQo01","difficulty":8,"youtube_id":"axPGQBbtlgI","has_sm":1},{"song_id":"0QI6ODo0bPq6Io8ibP16d6I81dbI6oDi","difficulty":4,"youtube_id":"7O_XU9SsTww","has_sm":null},{"song_id":"0QI6ODo0bPq6Io8ibP16d6I81dbI6oDi","difficulty":8,"youtube_id":"1DgksH8RaYg","has_sm":null},{"song_id":"160Oo1q8DolI6068lQi66OQbQ9Q8ODQI","difficulty":8,"youtube_id":"JSoySNEqcKU","has_sm":1},{"song_id":"18l0blb188Oqqi8I68o8oq91Qbq86QDi","difficulty":4,"youtube_id":"t2N6SsFSFXw","has_sm":1},{"song_id":"18l0blb188Oqqi8I68o8oq91Qbq86QDi","difficulty":8,"youtube_id":"dG2n1tkEUGY","has_sm":1},{"song_id":"19q96Q8l1oqbD0OQq6biDbO6O1oqqb6O","difficulty":7,"youtube_id":"3hGsvNfQL7A","has_sm":1},{"song_id":"1I9ODbQ81qi1006QoQI6d6dbd9iiPD9O","difficulty":4,"youtube_id":"regZCgtmpUg","has_sm":1},{"song_id":"1I9ODbQ81qi1006QoQI6d6dbd9iiPD9O","difficulty":8,"youtube_id":"v6EJpl5A8ME","has_sm":1},{"song_id":"1IdqDqDdd08dboO911P6OQ8lobb16PDd","difficulty":3,"youtube_id":"MEcR1WirnN8","has_sm":1},{"song_id":"1IdqDqDdd08dboO911P6OQ8lobb16PDd","difficulty":7,"youtube_id":"aFHjMgRfvPw","has_sm":1},{"song_id":"1IQ16dPQPQ0Q1qdidld6lO1o86q98o69","difficulty":4,"youtube_id":"mZcUAnKUzD0","has_sm":1},{"song_id":"1IQ16dPQPQ0Q1qdidld6lO1o86q98o69","difficulty":8,"youtube_id":"dJkB4L2YLFs","has_sm":1},{"song_id":"1o6dQqq9P8IQ6PbQO88OI1b91P9DoqQ8","difficulty":4,"youtube_id":"wBvjxNNH6CM","has_sm":1},{"song_id":"1o6dQqq9P8IQ6PbQO88OI1b91P9DoqQ8","difficulty":8,"youtube_id":"T28d38JiAvA","has_sm":1},{"song_id":"1qPIiqqQo0P9dD90I11q90b0ooIidbPO","difficulty":4,"youtube_id":"1IUlKxqRrtA","has_sm":1},{"song_id":"1qPIiqqQo0P9dD90I11q90b0ooIidbPO","difficulty":8,"youtube_id":"wIGStKOMPeE","has_sm":1},{"song_id":"60P9IPOdi1OIbD61D8i0D9ODoq6QOIPO","difficulty":4,"youtube_id":"EOW2pk5Dyes","has_sm":1},{"song_id":"60P9IPOdi1OIbD61D8i0D9ODoq6QOIPO","difficulty":8,"youtube_id":"4Ey1_RKU1nk","has_sm":1},{"song_id":"61Db8oi9d9bOIlloq8dqI8O000ilDb08","difficulty":3,"youtube_id":"2qflU41aK3Y","has_sm":1},{"song_id":"61Db8oi9d9bOIlloq8dqI8O000ilDb08","difficulty":7,"youtube_id":"gOp_gvgIhDE","has_sm":1},{"song_id":"688O16o80Iib0DPI8oQOIOdbIdQq0P1Q","difficulty":3,"youtube_id":"cefE2Ak7X0g","has_sm":1},{"song_id":"688O16o80Iib0DPI8oQOIOdbIdQq0P1Q","difficulty":7,"youtube_id":"mA5TWwaLTXs","has_sm":1},{"song_id":"68iObo1dP91oqDQ18iiiPQDDb8O6ddq6","difficulty":3,"youtube_id":"BffIou3yi1o","has_sm":1},{"song_id":"68iObo1dP91oqDQ18iiiPQDDb8O6ddq6","difficulty":7,"youtube_id":"CBpDsZH6ZKU","has_sm":1},{"song_id":"6d8DiDl0i1oldbbo0o60PQ0q96d608Dq","difficulty":4,"youtube_id":"xf9E29AW5I4","has_sm":1},{"song_id":"6d8DiDl0i1oldbbo0o60PQ0q96d608Dq","difficulty":8,"youtube_id":"CuqNy2CgaCo","has_sm":1},{"song_id":"6DQ9D9oi66I8ODi8o0dPdOD1ibbIqIdI","difficulty":3,"youtube_id":"52t_ORbjDuM","has_sm":1},{"song_id":"6DQ9D9oi66I8ODi8o0dPdOD1ibbIqIdI","difficulty":7,"youtube_id":"ulejfAo1mRg","has_sm":1},{"song_id":"6i99bQI11qD818DDdq6qb0Dql880lP8l","difficulty":4,"youtube_id":"N6ykFzZooqU","has_sm":1},{"song_id":"6i99bQI11qD818DDdq6qb0Dql880lP8l","difficulty":8,"youtube_id":"uKhXKaVtrhw","has_sm":1},{"song_id":"6ID160b99ibbd9OoblD0DPOl98lPbq6D","difficulty":4,"youtube_id":"RoiYR_sJqvE","has_sm":1},{"song_id":"6ID160b99ibbd9OoblD0DPOl98lPbq6D","difficulty":8,"youtube_id":"0zEtwWwC1zg","has_sm":1},{"song_id":"6Obi001oi9Qd1966dOd6d6Qo66dbbill","difficulty":4,"youtube_id":"i0iKCqeah6w","has_sm":1},{"song_id":"6Obi001oi9Qd1966dOd6d6Qo66dbbill","difficulty":8,"youtube_id":"lSG7pFCSn6E","has_sm":1},{"song_id":"6obQo6d0oQ6QoQql0I60b81IO8IOl1IO","difficulty":8,"youtube_id":"4-4joxUGF2M","has_sm":1},{"song_id":"6OIoOPDb9iI8i1Do9qQ96Q0ddOdd6q9i","difficulty":4,"youtube_id":"WNRHCtmdRsI","has_sm":null},{"song_id":"6PoillDiqb0Oo9qOiIDOb1qQQIbPqDoi","difficulty":4,"youtube_id":"BZsx6XIdXow","has_sm":1},{"song_id":"6PoillDiqb0Oo9qOiIDOb1qQQIbPqDoi","difficulty":8,"youtube_id":"u8Y_kbFssaA","has_sm":1},{"song_id":"6QQ1OdO99Ob001OQ90iP86o0I8OoQbib","difficulty":4,"youtube_id":"KHkAyGYA9gU","has_sm":1},{"song_id":"6QQ1OdO99Ob001OQ90iP86o0I8OoQbib","difficulty":8,"youtube_id":"JFqOUFC7KXQ","has_sm":1},{"song_id":"8d9Q0olQ980lQdPIdqbIiD8o1l1dQPI0","difficulty":3,"youtube_id":"je4CQDwZCoc","has_sm":1},{"song_id":"8d9Q0olQ980lQdPIdqbIiD8o1l1dQPI0","difficulty":7,"youtube_id":"JOEDCOj0ptE","has_sm":1},{"song_id":"8dbiodDo1i6IolDQdqdOoqDDD90q6liQ","difficulty":8,"youtube_id":"gwW4529NHuA","has_sm":1},{"song_id":"8dqQDblP6dPI10qq10qiPbqi1llQ06iP","difficulty":8,"youtube_id":"L3dBTyFRzMM","has_sm":1},{"song_id":"8iiqQ9o1P089901DPIq8PDPOl6oDOl1P","difficulty":4,"youtube_id":"IFrNFgct_W4","has_sm":1},{"song_id":"8iiqQ9o1P089901DPIq8PDPOl6oDOl1P","difficulty":8,"youtube_id":"fOXJLFmy9-M","has_sm":1},{"song_id":"8O6b1D9PDO0ll1IO9d1ODDPPo0QPQbob","difficulty":7,"youtube_id":"l37XX1djq7Y","has_sm":1},{"song_id":"8P1809bo8PoqQoqOQilPidOdobbo6iiO","difficulty":4,"youtube_id":null,"has_sm":null},{"song_id":"8P1809bo8PoqQoqOQilPidOdobbo6iiO","difficulty":8,"youtube_id":null,"has_sm":null},{"song_id":"8QbqP80q9PI8bbi0qOoiibOQD08OPdli","difficulty":7,"youtube_id":"7s5A6Sn1e2s","has_sm":1},{"song_id":"8QbqP80q9PI8bbi0qOoiibOQD08OPdli","difficulty":8,"youtube_id":"0nWufW5BDjo","has_sm":1},{"song_id":"8ql0DIiI0D9D1OP0qb8olo9bIQdP0ddq","difficulty":3,"youtube_id":"vKx1t8sYzWs","has_sm":1},{"song_id":"8ql0DIiI0D9D1OP0qb8olo9bIQdP0ddq","difficulty":7,"youtube_id":"H2MjIVcUFMw","has_sm":1},{"song_id":"919bPoOo9QO6dODOI6d0loO6qo6OqDlI","difficulty":3,"youtube_id":"ypBjLYFc5gw","has_sm":1},{"song_id":"919bPoOo9QO6dODOI6d0loO6qo6OqDlI","difficulty":7,"youtube_id":"X92sOfYaRSU","has_sm":1},{"song_id":"96d9qiDD8l09DQq6O1DO6O6I1IdP8q0D","difficulty":3,"youtube_id":"j_xjzAErGKc","has_sm":1},{"song_id":"96d9qiDD8l09DQq6O1DO6O6I1IdP8q0D","difficulty":7,"youtube_id":"ejZ7JA0mPuA","has_sm":1},{"song_id":"99OQb9b0IQ98P6IQdPOiqi8q16o16iqP","difficulty":3,"youtube_id":"Bjr5E31lHtE","has_sm":1},{"song_id":"99OQb9b0IQ98P6IQdPOiqi8q16o16iqP","difficulty":7,"youtube_id":"SuhbblqJBk0","has_sm":1},{"song_id":"99q8i8bPldDbio919ob0DPi0bqdIoobi","difficulty":3,"youtube_id":"-OWbq7NUkto","has_sm":1},{"song_id":"99q8i8bPldDbio919ob0DPi0bqdIoobi","difficulty":7,"youtube_id":"FeZcR_I6GGw","has_sm":1},{"song_id":"9b60DI1OQddDI6D9D1qPoDPODD19Db8d","difficulty":3,"youtube_id":"5-tkYuoQtfw","has_sm":1},{"song_id":"9b60DI1OQddDI6D9D1qPoDPODD19Db8d","difficulty":7,"youtube_id":"dVXYDlJWclc","has_sm":1},{"song_id":"9ddIP1i0O6l8oO9iI9Ii1Q1o800boQ0D","difficulty":4,"youtube_id":"fFeDECPpjwc","has_sm":1},{"song_id":"9ddIP1i0O6l8oO9iI9Ii1Q1o800boQ0D","difficulty":8,"youtube_id":"Qa1Ws80OPlI","has_sm":1},{"song_id":"9dI8ilPi9bd9blI6Q8D6IPb1lblqDl1Q","difficulty":3,"youtube_id":"pY4PYMb1rII","has_sm":1},{"song_id":"9dI8ilPi9bd9blI6Q8D6IPb1lblqDl1Q","difficulty":7,"youtube_id":"dvH_ifTUBxc","has_sm":1},{"song_id":"9DoD10OPQ999IlP0doo69olbOQ680q09","difficulty":3,"youtube_id":"QwQHy0Dj4_g","has_sm":1},{"song_id":"9i0q91lPPiO61b9P891O1i86iOP1I08O","difficulty":7,"youtube_id":"ddJVolBLFBQ","has_sm":1},{"song_id":"9i6dOd608qb0IlqoDIPb8q1o8q1ddQQd","difficulty":4,"youtube_id":"3fzEbfdNEoE","has_sm":1},{"song_id":"9i6dOd608qb0IlqoDIPb8q1o8q1ddQQd","difficulty":8,"youtube_id":"ucNDcPq0rwE","has_sm":1},{"song_id":"9IdoP1ld9098PI90QQ6bP0Idl1ibo80D","difficulty":3,"youtube_id":"QlZGi_6510I","has_sm":1},{"song_id":"9IdoP1ld9098PI90QQ6bP0Idl1ibo80D","difficulty":7,"youtube_id":"CkPfrC_B2SE","has_sm":1},{"song_id":"9ioI0IQ16OPb1Q0q8Oqdd6D9dPqDb618","difficulty":4,"youtube_id":"ZZ6o174XRZM","has_sm":1},{"song_id":"9ioI0IQ16OPb1Q0q8Oqdd6D9dPqDb618","difficulty":8,"youtube_id":"bZeKYM2gWO4","has_sm":1},{"song_id":"9lo10Dl06QIblQqOOid1qi0bd10I9lQ9","difficulty":8,"youtube_id":"g18itceVxlU","has_sm":1},{"song_id":"9oIO98IPOiq1idiIIbOOqdDQIOdQPPd6","difficulty":4,"youtube_id":"HMhiCBT52i8","has_sm":1},{"song_id":"9oIO98IPOiq1idiIIbOOqdDQIOdQPPd6","difficulty":8,"youtube_id":"9zXq3ui9n8c","has_sm":1},{"song_id":"9oll10Dq1qdbPQl68OQ8dOd9q86999i1","difficulty":4,"youtube_id":"NnKpvoAImj4","has_sm":1},{"song_id":"9oll10Dq1qdbPQl68OQ8dOd9q86999i1","difficulty":8,"youtube_id":"25upGl8TuPI","has_sm":1},{"song_id":"9PO0qPdi1OQo68Qb09qdIOo6008QoIPq","difficulty":4,"youtube_id":"17n3nVkCQD4","has_sm":1},{"song_id":"9PO0qPdi1OQo68Qb09qdIOo6008QoIPq","difficulty":8,"youtube_id":"31BMhE3pFks","has_sm":1},{"song_id":"b0o6bl18Q1bqI9o9oqQ9POoP8DiDDibP","difficulty":3,"youtube_id":"MacGnjR0_50","has_sm":1},{"song_id":"b0o6bl18Q1bqI9o9oqQ9POoP8DiDDibP","difficulty":7,"youtube_id":"HSXJoPkAHx0","has_sm":1},{"song_id":"b16OP1o9qb6bQd66qOl98iq0boiQP919","difficulty":4,"youtube_id":"dsABvCE4vYU","has_sm":0},{"song_id":"b1QllqO8oQdqo086QdIlIblDDbPodDoP","difficulty":3,"youtube_id":"3jU7rL8py8c","has_sm":1},{"song_id":"b1QllqO8oQdqo086QdIlIblDDbPodDoP","difficulty":7,"youtube_id":"gGsAvDQUEB8","has_sm":1},{"song_id":"bd8OODli0POo9bOq6i0oIPdIlbDlI910","difficulty":3,"youtube_id":"U3Aij1SJuPQ","has_sm":1},{"song_id":"bd8OODli0POo9bOq6i0oIPdIlbDlI910","difficulty":7,"youtube_id":"hNJ4TMEzlak","has_sm":1},{"song_id":"bdP0IOiPiQ8OlIbD1QQO8O6dPQqqb1Qb","difficulty":4,"youtube_id":"8WRdZbtsqyQ","has_sm":1},{"song_id":"bdP0IOiPiQ8OlIbD1QQO8O6dPQqqb1Qb","difficulty":8,"youtube_id":"fpDE0AazXsQ","has_sm":1},{"song_id":"bl90QbiqoOlDI6iQQQdo0Iol6PIdQblP","difficulty":3,"youtube_id":"QrxVxiRpoj0","has_sm":1},{"song_id":"bl90QbiqoOlDI6iQQQdo0Iol6PIdQblP","difficulty":7,"youtube_id":"x-eoSYmHapc","has_sm":1},{"song_id":"bll06Di6q1QOlddDlPDPiQDDI09bOOoP","difficulty":3,"youtube_id":"yUwhbgR9Nao","has_sm":1},{"song_id":"bll06Di6q1QOlddDlPDPiQDDI09bOOoP","difficulty":7,"youtube_id":"D6wm1PSjX-c","has_sm":1},{"song_id":"bo6PqbbPQ6D096OIP6dDPbPPiDi88609","difficulty":4,"youtube_id":"v4TJYTwgSpg","has_sm":1},{"song_id":"boqo0IoO8DodOl99Q8P8qOi8PqDq11b1","difficulty":4,"youtube_id":"tA2PbAfY-jw","has_sm":1},{"song_id":"boqo0IoO8DodOl99Q8P8qOi8PqDq11b1","difficulty":8,"youtube_id":"bi6Glg5xHoc","has_sm":1},{"song_id":"bPI6QobOQl9Q161l8l68069QdO1QbO9b","difficulty":4,"youtube_id":null,"has_sm":null},{"song_id":"bPI6QobOQl9Q161l8l68069QdO1QbO9b","difficulty":8,"youtube_id":null,"has_sm":null},{"song_id":"D08lqQOPdOO6D6ll690Qd6PdbO111011","difficulty":3,"youtube_id":"W6V-vnzQs6U","has_sm":1},{"song_id":"D08lqQOPdOO6D6ll690Qd6PdbO111011","difficulty":7,"youtube_id":"itJootuzy6Q","has_sm":1},{"song_id":"d10d86DQqqd6QDlQlOI1bQi9do66l8Od","difficulty":4,"youtube_id":"NYn-s3GTkGA","has_sm":1},{"song_id":"d10d86DQqqd6QDlQlOI1bQi9do66l8Od","difficulty":8,"youtube_id":"KZF8B9lRMIM","has_sm":1},{"song_id":"D6IQ1O1D00D1o8IQq0O9qqIibqDiiO0i","difficulty":4,"youtube_id":"QGcbn9YTkpY","has_sm":1},{"song_id":"D6IQ1O1D00D1o8IQq0O9qqIibqDiiO0i","difficulty":8,"youtube_id":"eFCkwJs-a08","has_sm":1},{"song_id":"d810q0I8q6d0l1POlIO6d66bOPb96dql","difficulty":3,"youtube_id":"8ilen1YLxZ4","has_sm":1},{"song_id":"d810q0I8q6d0l1POlIO6d66bOPb96dql","difficulty":7,"youtube_id":"mXwdbSsb8JY","has_sm":1},{"song_id":"D89QP18016o01qoOi60I6Q19dlOQPbdo","difficulty":3,"youtube_id":"VcRXs0BLrHg","has_sm":1},{"song_id":"D89QP18016o01qoOi60I6Q19dlOQPbdo","difficulty":7,"youtube_id":"kbLzVj_sZrc","has_sm":1},{"song_id":"D8q1ObblD0i6liQ0OD6OdD0qIo9oPldb","difficulty":3,"youtube_id":"e1VRy0b7ODE","has_sm":1},{"song_id":"D90qii9D6P0POQ69Iiblib00Po1DIoi8","difficulty":3,"youtube_id":null,"has_sm":null},{"song_id":"D90qii9D6P0POQ69Iiblib00Po1DIoi8","difficulty":7,"youtube_id":null,"has_sm":null},{"song_id":"D9lq0DioIl9D6ll0d61990DP9qPPb1dP","difficulty":4,"youtube_id":"Lc86e_BPH4g","has_sm":1},{"song_id":"D9lq0DioIl9D6ll0d61990DP9qPPb1dP","difficulty":8,"youtube_id":null,"has_sm":1},{"song_id":"db6q6DlPd68bbQOOQ99OI1I9QD8PqDo8","difficulty":4,"youtube_id":"HyCdzfq7_po","has_sm":1},{"song_id":"db6q6DlPd68bbQOOQ99OI1I9QD8PqDo8","difficulty":8,"youtube_id":"bSHEb6T6PME","has_sm":1},{"song_id":"dbIQ6o1lDi1OqqdO60q0lqqD9qPD0qlP","difficulty":4,"youtube_id":"gZ36aIUjJcI","has_sm":1},{"song_id":"dbIQ6o1lDi1OqqdO60q0lqqD9qPD0qlP","difficulty":8,"youtube_id":null,"has_sm":1},{"song_id":"dD6PqbboDil89DPIID86Pldi6obI1b8l","difficulty":8,"youtube_id":"z2nbE0epZ8w","has_sm":1},{"song_id":"DdIo9DQ0ddDld99DQdiiqbPP06OI91I0","difficulty":3,"youtube_id":"24sUI5ecesE","has_sm":1},{"song_id":"DdIo9DQ0ddDld99DQdiiqbPP06OI91I0","difficulty":7,"youtube_id":"goYTOZX5g8s","has_sm":1},{"song_id":"dDlDPddq08iD8IOb9I1PbODP9696966D","difficulty":4,"youtube_id":"AiDYtT0-pOs","has_sm":1},{"song_id":"dDlDPddq08iD8IOb9I1PbODP9696966D","difficulty":8,"youtube_id":"kDMx57NXe_M","has_sm":1},{"song_id":"ddqQ801q1lIdIooDiq66qPil1oD0611I","difficulty":4,"youtube_id":"L4AM9UH2CpU","has_sm":null},{"song_id":"dDQqqIQlDQ9POd90OPl9Dd1i106odDl0","difficulty":4,"youtube_id":"JBqRLNotZd4","has_sm":1},{"song_id":"dDQqqIQlDQ9POd90OPl9Dd1i106odDl0","difficulty":8,"youtube_id":"vY9uoQCMdWc","has_sm":1},{"song_id":"Di0ODIlddo8d90oo09qqd98QObQP1llI","difficulty":3,"youtube_id":"B3wiHpfyLI4","has_sm":1},{"song_id":"Di0ODIlddo8d90oo09qqd98QObQP1llI","difficulty":7,"youtube_id":"rfMjokRe4mA","has_sm":1},{"song_id":"dIdDQD1Q8oPQ90Q1DPbiQI661qD9oi6I","difficulty":4,"youtube_id":"9wzg7kl_nXs","has_sm":1},{"song_id":"dIdDQD1Q8oPQ90Q1DPbiQI661qD9oi6I","difficulty":8,"youtube_id":"Z2oUaU-sT3Q","has_sm":1},{"song_id":"diq9D0qbI00iOOb69q6Q1Q90PQOlo6dl","difficulty":3,"youtube_id":"7qWq1MzcZQg","has_sm":1},{"song_id":"diq9D0qbI00iOOb69q6Q1Q90PQOlo6dl","difficulty":7,"youtube_id":"i3gItAlIflM","has_sm":1},{"song_id":"Dl91ldlb8PODoO96OI801DP0PPl8Plqi","difficulty":4,"youtube_id":"T3d_XD9cKtg","has_sm":1},{"song_id":"Dl91ldlb8PODoO96OI801DP0PPl8Plqi","difficulty":8,"youtube_id":"kZ6JEcqhdvY","has_sm":1},{"song_id":"Dlo0PPibIoQbOI8I61O1DobQOIiDb11b","difficulty":4,"youtube_id":"wj4TFXCTgfI","has_sm":1},{"song_id":"Dlo0PPibIoQbOI8I61O1DobQOIiDb11b","difficulty":8,"youtube_id":"C3fRGJM3RX8","has_sm":1},{"song_id":"dOb880lOloIIod00PQ1iQOQqlOOQ0Ql0","difficulty":3,"youtube_id":"FQOlL80CmZY","has_sm":1},{"song_id":"dOb880lOloIIod00PQ1iQOQqlOOQ0Ql0","difficulty":7,"youtube_id":"oTAKfioBnN4","has_sm":1},{"song_id":"DOd9bIqddQ91qbQI1bdbbDi1lqPObo8l","difficulty":8,"youtube_id":null,"has_sm":null},{"song_id":"dPI9loII89Q6P6iD6Ioo1iiI880DI1Dd","difficulty":3,"youtube_id":"YGarytjC55Q","has_sm":1},{"song_id":"dPI9loII89Q6P6iD6Ioo1iiI880DI1Dd","difficulty":7,"youtube_id":"w81Uc_hDcnw","has_sm":1},{"song_id":"Dqb69lDiP6diId6O8Q0I6bbQI88lPlb0","difficulty":4,"youtube_id":"6hHyE6_IH8k","has_sm":null},{"song_id":"Dqb69lDiP6diId6O8Q0I6bbQI88lPlb0","difficulty":8,"youtube_id":"c5reNiYOwnA","has_sm":null},{"song_id":"dQODIo01o98oPll086Qdol8bq9QP8d61","difficulty":3,"youtube_id":"6bA7-Iy4YI0","has_sm":1},{"song_id":"dQODIo01o98oPll086Qdol8bq9QP8d61","difficulty":7,"youtube_id":"gxqM5TIjB2Y","has_sm":1},{"song_id":"dQPPd10QO9d8IiOiIi8iDD1Qdq8lQli0","difficulty":3,"youtube_id":"14D4MpBrtCQ","has_sm":1},{"song_id":"dQPPd10QO9d8IiOiIi8iDD1Qdq8lQli0","difficulty":7,"youtube_id":"k5CxYjLvgUc","has_sm":1},{"song_id":"dqQbQ9oPlIi6bDdi18d9qPlDb0PiDddi","difficulty":3,"youtube_id":"9RMWVvmO0w8","has_sm":1},{"song_id":"I0091lboOD1Dii10dQ0qbDqil69PQ0io","difficulty":4,"youtube_id":"tqrl4qrdDDU","has_sm":1},{"song_id":"I0091lboOD1Dii10dQ0qbDqil69PQ0io","difficulty":8,"youtube_id":"vDIRsCUC0uo","has_sm":1},{"song_id":"i080lP1QqIiO998qPl888qboIiIDdiD1","difficulty":3,"youtube_id":"iL1_NjwGdn8","has_sm":1},{"song_id":"i080lP1QqIiO998qPl888qboIiIDdiD1","difficulty":7,"youtube_id":null,"has_sm":1},{"song_id":"I0dOli6do1l1008I8PllOq8DoOoIO8oq","difficulty":3,"youtube_id":"mBfaqWR9h8E","has_sm":null},{"song_id":"I0dOli6do1l1008I8PllOq8DoOoIO8oq","difficulty":7,"youtube_id":"ZeUFrefhsEI","has_sm":null},{"song_id":"i0Q0o98q0DqbbiDd6966QIIoddlob6lI","difficulty":3,"youtube_id":"GuzYzhgYA20","has_sm":1},{"song_id":"i0Q0o98q0DqbbiDd6966QIIoddlob6lI","difficulty":7,"youtube_id":"CtOOb_2O4sQ","has_sm":1},{"song_id":"I0qiD6Ob86D1oQOib81lID6Dll8iOOOP","difficulty":4,"youtube_id":"gN7HXhSVO0c","has_sm":1},{"song_id":"I0qiD6Ob86D1oQOib81lID6Dll8iOOOP","difficulty":8,"youtube_id":"ffgbmwejIYg","has_sm":1},{"song_id":"i6bl89d6OOi1O00qlQOIl8b8Qld6IiQP","difficulty":3,"youtube_id":"AmUVjcLDu7k","has_sm":1},{"song_id":"i6bl89d6OOi1O00qlQOIl8b8Qld6IiQP","difficulty":7,"youtube_id":"_fk0HlTO2Kc","has_sm":1},{"song_id":"i8II16blIIbQQd196b616OPbPO910oi9","difficulty":4,"youtube_id":"TSrR6fe2y3g","has_sm":1},{"song_id":"i8II16blIIbQQd196b616OPbPO910oi9","difficulty":8,"youtube_id":null,"has_sm":1},{"song_id":"I9Oood9l9li0D08Q6d6DQPiIQiloidO6","difficulty":4,"youtube_id":"eTzX9h4dz0M","has_sm":1},{"song_id":"I9Oood9l9li0D08Q6d6DQPiIQiloidO6","difficulty":8,"youtube_id":"5gWfuM8YO0M","has_sm":1},{"song_id":"i9PQoDbQI0qqd6I00d19bQo6q9PoOIbO","difficulty":4,"youtube_id":"xpbVPa8M5tc","has_sm":1},{"song_id":"IbI90PiioDlqPP19D1odPPbP1PP0009O","difficulty":4,"youtube_id":"6XUz8KPrhZ4","has_sm":1},{"song_id":"IbI90PiioDlqPP19D1odPPbP1PP0009O","difficulty":8,"youtube_id":"i5OPqxQjvHw","has_sm":1},{"song_id":"io1d1Dq80Di08O1Pb9bQ8DoP9d9Ooi90","difficulty":7,"youtube_id":"2FARSBkPVSQ","has_sm":1},{"song_id":"iP6qIl6lD809098io0OiPP08Ii18I6OI","difficulty":8,"youtube_id":"k5RdUhc-I0w","has_sm":1},{"song_id":"IPq8dO1lD8qidDlI0ObboI9IIldQO6IQ","difficulty":4,"youtube_id":"uoiV3g70zWc","has_sm":1},{"song_id":"IPq8dO1lD8qidDlI0ObboI9IIldQO6IQ","difficulty":8,"youtube_id":"040qzAbLZA0","has_sm":1},{"song_id":"IQ0ID09qD6O1oOdIq0oilI8I8l9DlP9b","difficulty":4,"youtube_id":"Rye_MhbNYBE","has_sm":1},{"song_id":"IQ0ID09qD6O1oOdIq0oilI8I8l9DlP9b","difficulty":8,"youtube_id":"m_lGxkKdYqI","has_sm":1},{"song_id":"iq6b9lP6qQQIOIPQDdPD8ld1o9891Pq9","difficulty":7,"youtube_id":"J47MONP8OQ0","has_sm":1},{"song_id":"IqPq866IQD0liq9lOl00qDqiPlq9bOD0","difficulty":4,"youtube_id":"z3EPfB5wXlw","has_sm":1},{"song_id":"IqPq866IQD0liq9lOl00qDqiPlq9bOD0","difficulty":8,"youtube_id":null,"has_sm":1},{"song_id":"IQqi9Q9qD0DDQIqQOb868QIOioqDqI01","difficulty":3,"youtube_id":"cKOC3mIIf0I","has_sm":1},{"song_id":"IQqi9Q9qD0DDQIqQOb868QIOioqDqI01","difficulty":7,"youtube_id":"V00CHLI55BM","has_sm":1},{"song_id":"l666Dd0bIO9O69boPd898b19bPDo1IdO","difficulty":4,"youtube_id":"QHHxsj9wJ7U","has_sm":1},{"song_id":"l666Dd0bIO9O69boPd898b19bPDo1IdO","difficulty":8,"youtube_id":"58B-y5BCJ0s","has_sm":1},{"song_id":"l6d0ibbliQPQDdb1lP18D9qbPDi1698b","difficulty":3,"youtube_id":"u73ngSiOjOk","has_sm":1},{"song_id":"l6d0ibbliQPQDdb1lP18D9qbPDi1698b","difficulty":7,"youtube_id":"muAYlBpev8A","has_sm":1},{"song_id":"l9QibD8IoooD9DIl1O8Q0lo89I9qdido","difficulty":3,"youtube_id":"xy3c-C9-jn0","has_sm":1},{"song_id":"l9QibD8IoooD9DIl1O8Q0lo89I9qdido","difficulty":7,"youtube_id":"EEmZ73bv-d8","has_sm":1},{"song_id":"lb969IOOoI06P18PPq81o1lPD1b1OqqI","difficulty":7,"youtube_id":"L0x7NdwapE4","has_sm":1},{"song_id":"lDOPd60Q9obl6D0q8qqdQi9lioblD1db","difficulty":7,"youtube_id":"yMDWjofEmik","has_sm":1},{"song_id":"lIlQ8DbPP6Iil1DOlQ6d8IPQblDQ8IiI","difficulty":4,"youtube_id":"n0l9aY0Tzcw","has_sm":1},{"song_id":"lIlQ8DbPP6Iil1DOlQ6d8IPQblDQ8IiI","difficulty":8,"youtube_id":"EtuN3hsBBfw","has_sm":1},{"song_id":"liq91ddlPQ16iooqDDQ86qlodIO10Qb1","difficulty":8,"youtube_id":"3MZYIhnQAig","has_sm":1},{"song_id":"lliDD9qPqiIDI8P9bb18IO60l9D061Io","difficulty":3,"youtube_id":"HwJIIhrKMgQ","has_sm":1},{"song_id":"lliDD9qPqiIDI8P9bb18IO60l9D061Io","difficulty":7,"youtube_id":"sgm4jTlc2Uo","has_sm":1},{"song_id":"loD8qPl09qqi0o1iqbbDOdllDblioDIl","difficulty":3,"youtube_id":"a45QRuHQqOM","has_sm":1},{"song_id":"loD8qPl09qqi0o1iqbbDOdllDblioDIl","difficulty":7,"youtube_id":"R5BiVSllhgc","has_sm":1},{"song_id":"o068b00O6QD8lo9O1i9PbQlqO6IQOidD","difficulty":3,"youtube_id":"q2r3mhS1pok","has_sm":1},{"song_id":"o068b00O6QD8lo9O1i9PbQlqO6IQOidD","difficulty":7,"youtube_id":"v4mlDi2JIOQ","has_sm":1},{"song_id":"o0l1Qioq1i9iQl6b9q6il0iqi1b1OQ9b","difficulty":3,"youtube_id":"qh3g0HwqsCU","has_sm":1},{"song_id":"o0l1Qioq1i9iQl6b9q6il0iqi1b1OQ9b","difficulty":7,"youtube_id":"EIvnbiaf9Sk","has_sm":1},{"song_id":"o1biqbO9i1IiObD0d1D8d8iqb6q86Qqi","difficulty":3,"youtube_id":"LgiP2yt0jn4","has_sm":1},{"song_id":"o1biqbO9i1IiObD0d1D8d8iqb6q86Qqi","difficulty":7,"youtube_id":"89XnnDuTtSQ","has_sm":1},{"song_id":"O6llIdODQD6oDQ6QiPQDOlob9i8l6qib","difficulty":3,"youtube_id":"aslEN821dCg","has_sm":1},{"song_id":"O6llIdODQD6oDQ6QiPQDOlob9i8l6qib","difficulty":7,"youtube_id":"bdMYl_IMTYw","has_sm":1},{"song_id":"o89biodIl0Oo1bQqll86QDi0oQQd61Db","difficulty":3,"youtube_id":"s--S4k9iQB8","has_sm":1},{"song_id":"o89biodIl0Oo1bQqll86QDi0oQQd61Db","difficulty":7,"youtube_id":"jxiMsnMZC5k","has_sm":1},{"song_id":"O9Odqd8qiQiOqQdOOq01D8OQlOiO1iPD","difficulty":3,"youtube_id":"13TCblyqBME","has_sm":1},{"song_id":"O9Odqd8qiQiOqQdOOq01D8OQlOiO1iPD","difficulty":7,"youtube_id":"oo9GeYHhVzU","has_sm":1},{"song_id":"O9qDQOQO8dDDIiO9dPP0Pb8qQo9l89D9","difficulty":3,"youtube_id":"89XqYQfrY6I","has_sm":1},{"song_id":"O9qDQOQO8dDDIiO9dPP0Pb8qQo9l89D9","difficulty":7,"youtube_id":"Bxn6bRD9sSY","has_sm":1},{"song_id":"ob6IPbiqD969Q66808obd908DI81bqPi","difficulty":3,"youtube_id":"j_hb3j40ScA","has_sm":1},{"song_id":"ob6IPbiqD969Q66808obd908DI81bqPi","difficulty":7,"youtube_id":"IlCsig3006s","has_sm":1},{"song_id":"Od6bOOb69PqbqPdb6lO1QI66DOqo0POO","difficulty":3,"youtube_id":"KeufBwvNhCQ","has_sm":1},{"song_id":"Od6bOOb69PqbqPdb6lO1QI66DOqo0POO","difficulty":7,"youtube_id":"zHvYt-tXoZc","has_sm":1},{"song_id":"OddDoQ6dqi0QdQDDOO6qlO08d8bPbli1","difficulty":3,"youtube_id":"-RMWKDq9oq4","has_sm":1},{"song_id":"OddDoQ6dqi0QdQDDOO6qlO08d8bPbli1","difficulty":7,"youtube_id":"WlBvPuRK1SA","has_sm":1},{"song_id":"OdlOPPblPlbbldOdqblI06Dd1q00PPo9","difficulty":4,"youtube_id":"ZOU6PZPy8fs","has_sm":1},{"song_id":"odPq866q0QPOP9QOQ9QQIlIO60Oid16o","difficulty":4,"youtube_id":"fCR56Eq3YdQ","has_sm":1},{"song_id":"odPq866q0QPOP9QOQ9QQIlIO60Oid16o","difficulty":8,"youtube_id":"_mf9gB_UjvU","has_sm":1},{"song_id":"OiIOPd80d9PQQIbidO6ObioboO88OD9l","difficulty":3,"youtube_id":"dUOWC8Kpkq0","has_sm":1},{"song_id":"OiIOPd80d9PQQIbidO6ObioboO88OD9l","difficulty":7,"youtube_id":"f40P58Zd72E","has_sm":1},{"song_id":"Ol8PPooqO8iOqQ6900o0q0QI9dPo0O0b","difficulty":4,"youtube_id":"6KlU2bn5TM4","has_sm":1},{"song_id":"Ol8PPooqO8iOqQ6900o0q0QI9dPo0O0b","difficulty":8,"youtube_id":"tLJx2BXkM-A","has_sm":1},{"song_id":"OlDo09P8l0d6d80i8qD0qQddbi0QQD8b","difficulty":4,"youtube_id":"XGsRrfX-PQI","has_sm":1},{"song_id":"OlDo09P8l0d6d80i8qD0qQddbi0QQD8b","difficulty":8,"youtube_id":"I3G8hysijL0","has_sm":1},{"song_id":"oOI88lollO1OOQQd9DPi0690I6i6oiII","difficulty":4,"youtube_id":"XTK3K5au5Uk","has_sm":1},{"song_id":"OPbd0ldd89Ddll690qiObDld9oDdPdOi","difficulty":3,"youtube_id":"s68W-VLsO_8","has_sm":1},{"song_id":"OPbd0ldd89Ddll690qiObDld9oDdPdOi","difficulty":7,"youtube_id":"yaJm5aYB_dI","has_sm":1},{"song_id":"oQ868oOio6O90i9qO1o8I96P1do11ID0","difficulty":3,"youtube_id":"gKcD1dLLd5I","has_sm":1},{"song_id":"oQ868oOio6O90i9qO1o8I96P1do11ID0","difficulty":7,"youtube_id":"NW9LEGP0JxE","has_sm":1},{"song_id":"OQO1Di8IQIQqP1d81d1ID9QD110b0888","difficulty":3,"youtube_id":"WfCYzsbx8BQ","has_sm":1},{"song_id":"OQO1Di8IQIQqP1d81d1ID9QD110b0888","difficulty":7,"youtube_id":"8X-e8dtOlmM","has_sm":1},{"song_id":"P06O6iQbiPPqiIqOd0IQdqolbPbDId6Q","difficulty":3,"youtube_id":"-wVznNiTzT4","has_sm":1},{"song_id":"P1boP1O60bdI16i6lqqd1Q8ioiPbolqd","difficulty":4,"youtube_id":"WiIIKqzFmbY","has_sm":1},{"song_id":"P1boP1O60bdI16i6lqqd1Q8ioiPbolqd","difficulty":8,"youtube_id":"DpdVWJ97QdQ","has_sm":1},{"song_id":"P6id8qqolbP0oqO060OOqbl60DI9iQoQ","difficulty":3,"youtube_id":"oMHBdOcjodo","has_sm":1},{"song_id":"Pd8bD1od1iOOl80oOiiiIb9QdqIQQllQ","difficulty":3,"youtube_id":"d3S7dREKXJ8","has_sm":1},{"song_id":"Pd8bD1od1iOOl80oOiiiIb9QdqIQQllQ","difficulty":7,"youtube_id":"gwhWUk-jqWQ","has_sm":1},{"song_id":"PDbDl9dQQQiold81d9DQ6QQobQqb1OO8","difficulty":4,"youtube_id":"br0PsUB21So","has_sm":1},{"song_id":"PDbDl9dQQQiold81d9DQ6QQobQqb1OO8","difficulty":8,"youtube_id":"G1CzMJSp7ck","has_sm":1},{"song_id":"PdD1dlq1q00q8o9Il6IIqi61Il9DIo61","difficulty":3,"youtube_id":"1Ncw4rH23IM","has_sm":null},{"song_id":"PdD1dlq1q00q8o9Il6IIqi61Il9DIo61","difficulty":7,"youtube_id":null,"has_sm":null},{"song_id":"PIO8dod8P9OOP1bi0D1POIi6OdOdQDql","difficulty":3,"youtube_id":"KYLc4eO5Z8Y","has_sm":1},{"song_id":"PIP60POo0dDQlIiqO9bIQ1oddQD8P9Il","difficulty":4,"youtube_id":"OvTfVPhwLP0","has_sm":1},{"song_id":"PIP60POo0dDQlIiqO9bIQ1oddQD8P9Il","difficulty":8,"youtube_id":"FaHs3iQX5Dk","has_sm":1},{"song_id":"PIPdidPO68916i10dO8lPoI9Q9blPbID","difficulty":7,"youtube_id":"I9PH3qH1T_M","has_sm":null},{"song_id":"POq8OPlOO9199i11Od0P00801Qo01DQo","difficulty":3,"youtube_id":"zTfW27hbHo0","has_sm":1},{"song_id":"POq8OPlOO9199i11Od0P00801Qo01DQo","difficulty":7,"youtube_id":"tK2Xl5MxOfM","has_sm":1},{"song_id":"PP9QDQ0IQQID00P61d8qdDdP09b19iiI","difficulty":4,"youtube_id":"450AUnopqys","has_sm":1},{"song_id":"PP9QDQ0IQQID00P61d8qdDdP09b19iiI","difficulty":8,"youtube_id":null,"has_sm":1},{"song_id":"PPb6l1di1Pi0o8O08odqIDlbPll61QbQ","difficulty":3,"youtube_id":"Qlghl7uC4bU","has_sm":1},{"song_id":"PPb6l1di1Pi0o8O08odqIDlbPll61QbQ","difficulty":7,"youtube_id":"_YMyPB6fD-M","has_sm":1},{"song_id":"Q0OiPQQ8IbIDq08IO9Io0qDdoDPPdd1q","difficulty":8,"youtube_id":null,"has_sm":1},{"song_id":"q6di1DQbi88i9QlPol1iIPbb8lP1qP1b","difficulty":3,"youtube_id":"AOBX-Z0_Osw","has_sm":1},{"song_id":"q6di1DQbi88i9QlPol1iIPbb8lP1qP1b","difficulty":7,"youtube_id":"8KdyHC2qsLI","has_sm":1},{"song_id":"Q8b91l6od9bq6IPqlddiP0bb0l1iqD8I","difficulty":4,"youtube_id":"guvyOxH1bw4","has_sm":1},{"song_id":"Q8b91l6od9bq6IPqlddiP0bb0l1iqD8I","difficulty":8,"youtube_id":"8E0ZXTMDC9Y","has_sm":1},{"song_id":"Q8bIDb60oPo890oi0l0O9PQd9lOb8o1Q","difficulty":3,"youtube_id":"kXi6T3qLZcU","has_sm":1},{"song_id":"Q8bIDb60oPo890oi0l0O9PQd9lOb8o1Q","difficulty":7,"youtube_id":"gcMag2vad1s","has_sm":1},{"song_id":"Q8PqoP91qqI6I909IdQ098091q9q0i19","difficulty":4,"youtube_id":"VBGArMiY6_Q","has_sm":null},{"song_id":"Q8PqoP91qqI6I909IdQ098091q9q0i19","difficulty":8,"youtube_id":"dTfgUd0EaP8","has_sm":null},{"song_id":"q8QPqbiQ00i6odq81P0D960I108bIiQb","difficulty":4,"youtube_id":"ovJlCcnjuN4","has_sm":1},{"song_id":"q8QPqbiQ00i6odq81P0D960I108bIiQb","difficulty":8,"youtube_id":"k83uwcQVoEg","has_sm":1},{"song_id":"q96q9D9oIIOQl8QQ60ii19P0Dbq8Q609","difficulty":3,"youtube_id":"evFQEQXlePA","has_sm":1},{"song_id":"q96q9D9oIIOQl8QQ60ii19P0Dbq8Q609","difficulty":7,"youtube_id":"5BQNuW30In4","has_sm":1},{"song_id":"Q99q619i0lDqll6Q0lq8l1oQ0qPO8o6I","difficulty":3,"youtube_id":"yqJuYtCrJDQ","has_sm":1},{"song_id":"Q99q619i0lDqll6Q0lq8l1oQ0qPO8o6I","difficulty":7,"youtube_id":"dvV6lXjmVtg","has_sm":1},{"song_id":"Q9iiOo800blDqO0DDDPI1PIbl1lIidI1","difficulty":3,"youtube_id":"vwRX-rzUVtY","has_sm":1},{"song_id":"Q9iiOo800blDqO0DDDPI1PIbl1lIidI1","difficulty":7,"youtube_id":"GinheD1o9TU","has_sm":1},{"song_id":"Q9l0i6DPO08obldq101ldDioiqdIDqlq","difficulty":4,"youtube_id":"sC3CM9cDSdg","has_sm":1},{"song_id":"Q9l0i6DPO08obldq101ldDioiqdIDqlq","difficulty":8,"youtube_id":"mvDoPLmCA6Q","has_sm":1},{"song_id":"Q9Q088PPd0bPi9QQ8iil1lQqPdiQP69D","difficulty":4,"youtube_id":"0u26NEXMdEM","has_sm":1},{"song_id":"Q9Q088PPd0bPi9QQ8iil1lQqPdiQP69D","difficulty":8,"youtube_id":"l9WftP23_1I","has_sm":1},{"song_id":"QD9Ib18D9lIO10O19d16PbPb68q1190d","difficulty":3,"youtube_id":"z2R0HpBNkzQ","has_sm":1},{"song_id":"QD9Ib18D9lIO10O19d16PbPb68q1190d","difficulty":7,"youtube_id":"ZUIuCf37T8s","has_sm":1},{"song_id":"qib6O1d6010d8Iql8IQ0q8diqOP6dIqb","difficulty":8,"youtube_id":"ai4oT8mvOZ4","has_sm":1},{"song_id":"QlQ10I6o1l88loioo6DIObi0P09PPdiD","difficulty":3,"youtube_id":"s5LFmgQEDHw","has_sm":1},{"song_id":"QlQ10I6o1l88loioo6DIObi0P09PPdiD","difficulty":7,"youtube_id":"J6xCuZIl77k","has_sm":1},{"song_id":"QoDQ0oq08QqiI0DQ8dIPb10qIi6d6i89","difficulty":4,"youtube_id":"ej1T-WBPgjI","has_sm":1},{"song_id":"QoDQ0oq08QqiI0DQ8dIPb10qIi6d6i89","difficulty":8,"youtube_id":"4ijB5ixeAqg","has_sm":1},{"song_id":"QoODOoqDli0bOoqqDo8ODo1lDI9llblo","difficulty":3,"youtube_id":"RzJWRPwct7k","has_sm":1},{"song_id":"qOP1qP69o6id061o9bo8l6P11P1PQI1O","difficulty":8,"youtube_id":"J2Uq2cGI4uM","has_sm":1},{"song_id":"qP8qb6lIqPIlO696q8881qoIqi1O6ldI","difficulty":3,"youtube_id":"L2dZLnDlQB4","has_sm":1},{"song_id":"qP8qb6lIqPIlO696q8881qoIqi1O6ldI","difficulty":7,"youtube_id":"ABFbL3FU7EI","has_sm":1},{"song_id":"qqdlo1QOQo6QIi8PqOi8iIOO0il1IblQ","difficulty":4,"youtube_id":"AeXFgiw9gI4","has_sm":1},{"song_id":"qqdlo1QOQo6QIi8PqOi8iIOO0il1IblQ","difficulty":8,"youtube_id":"JnsUaBYdgbY","has_sm":1},{"song_id":"QQldo10ObPPQPlliODiDIIl0Q1oPoo61","difficulty":3,"youtube_id":"wZPUea16n9A","has_sm":1},{"song_id":"QQldo10ObPPQPlliODiDIIl0Q1oPoo61","difficulty":4,"youtube_id":"F8Po-uimPlc","has_sm":1},{"song_id":"QQldo10ObPPQPlliODiDIIl0Q1oPoo61","difficulty":7,"youtube_id":"LUPvDo01r_o","has_sm":1}];
+let scores = [];
+let chartMetadata = {};
+
+let indexedAllCharts;
+let indexedAllScores;
+
+const viewSpdp = 0;
+const viewRating = 17;
+const calculationUnixtimeUtcSec = 1761065891;
+
+let xpstr = {
+    RENDERING_IMAGE_DIALOG_TITLE : "画像生成中…",
+};
+
+$(document).ready(function (e) {
+
+    initData();
+    renderDifficultyList();
+    initAutocomplete($('#song-search'));
+
+    let versionStr = "バージョン 11、リビジョン 1";
+
+    let timeStr = "最近のアップデート：{time}".replace('{time}', humanDateTimeFromUnixSec(calculationUnixtimeUtcSec));
+
+    let historyStr = "過去の記録を見る";
+
+    $('#list-version-info').html(versionStr + ' • ' + timeStr + ' • <a class="div-options-btn" href="/difficulty_list/history/17">' + historyStr + '</a>');
+});
+
+$(document).click(function(event) {
+    dismissAutocomplete();
+});
+
+function dismissAutocomplete() {
+    let divRes = $('#song-search-results');
+    divRes.empty();
+    divRes.hide();
+}
+
+function explanation() {
+    swal.fire({
+        title: "表の説明",
+        html: "この表はレベル毎にサブ難易度（ランク）に分けています。ランクが高い譜面は大体ランクが低い譜面より比較的高いスコアを獲得しづらい仕様になっています。<p>サブ難易度は三倍Ice Creamへアップロードされたスコアを利用したアルゴリズムによって作成されています。アルゴリズムは2譜面（AとB）を比較します。もしAのスコアがBより低いダンサーが多ければ、アルゴリズムはAをBより高いサブ難易度へ格付けします。<p>尚、このアルゴリズムは開発中であり、一部のランクは不正確な場合もあります。特にユーザーのスコアが少ない譜面（例：新しい譜面）はランクが不安定であります。ご了承お願いします。",
+    });
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+
+
+<div id="main-flexbox">
+
+<div id="song-info-container" class="bg-muted-light">
+    <a href="#" id="song-details-link" target="_blank"><div id="big-jacket-container"><img id="big-jacket" src="/img/no_banner.png"></div></a>
+    <div id="song-info">
+        <p id="song-title" class="outlined color-vibrant-main">曲を選択</p>
+        <p id="song-diff" class="color-vibrant-dark"></p>
+    </div>
+    <div id="song-toolbar">
+        <a href="" id="youtube-link" target="_blank" class="color-vibrant-dark" style="display:none"><p>Youtubeで見る</p></a>
+        <a href="" id="stepchart-link" target="_blank" class="color-vibrant-dark" style="display:none"><p>譜面を見る</p></a>
+        <input id="song-search" value="" placeholder="検索"></input>
+        <div id="song-search-results"></div>
+    </div>
+</div>
+
+<div id="difficulty-list-container">
+
+    <table id="difficulty-list-table">
+
+        <tr>
+            <td colspan="2">
+                <div id="difficulty-list-header">
+                    <div id="logos-container">
+                        <img id="printable-logo-header" src="/img/full_logo_with_url.png">
+                        <a href="/"><div id="main-logo-container"><img id="logo-header" src="/img/full_logo.png"></div></a>
+                    </div>
+                    
+                    <select id="select-level" onchange="levelHasChanged()">
+                        
+                        <option value="1">LEVEL 1</option>
+                        
+                        <option value="2">LEVEL 2</option>
+                        
+                        <option value="3">LEVEL 3</option>
+                        
+                        <option value="4">LEVEL 4</option>
+                        
+                        <option value="5">LEVEL 5</option>
+                        
+                        <option value="6">LEVEL 6</option>
+                        
+                        <option value="7">LEVEL 7</option>
+                        
+                        <option value="8">LEVEL 8</option>
+                        
+                        <option value="9">LEVEL 9</option>
+                        
+                        <option value="10">LEVEL 10</option>
+                        
+                        <option value="11">LEVEL 11</option>
+                        
+                        <option value="12">LEVEL 12</option>
+                        
+                        <option value="13">LEVEL 13</option>
+                        
+                        <option value="14">LEVEL 14</option>
+                        
+                        <option value="15">LEVEL 15</option>
+                        
+                        <option value="16">LEVEL 16</option>
+                        
+                        <option value="17" selected>LEVEL 17</option>
+                        
+                        <option value="18">LEVEL 18</option>
+                        
+                        <option value="19">LEVEL 19</option>
+                        
+                    </select>
+
+
+                    <select id="select-spdp" onchange="spdpHasChanged()">
+                        <option value="0" selected>シングルプレイ</option>
+                        <option value="1">ダブルプレイ</option>
+                    </select>
+
+                    <span id="list-version-info"></span>
+
+                    <div id="difficulty-list-options">
+                        <div style="display:none;">
+                            <span id="lights-label">ランク除外</span>
+                            <select id="lights" onchange="lightsSelectDidChange()">
+                                <option value="0" selected>なし</option>
+                                <option value="6">MFC</option>
+                                <option value="5">PFC</option>
+                                <option value="4">GFC</option>
+                                <option value="3">FC</option>
+                                <option value="2">LIFE4</option>
+                                <option value="AAA">AAA</option>
+                                <option value="AA">AA+</option>
+                                <option value="1">クリア</option>
+                                <option value="F10">FLARE EX</option>
+                                <option value="F9">FLARE IX</option>
+                                <option value="F8">FLARE VIII</option>
+                                <option value="F7">FLARE VII</option>
+                                <option value="F6">FLARE VI</option>
+                                <option value="F5">FLARE V</option>
+                                <option value="F4">FLARE IV</option>
+                                <option value="F3">FLARE III</option>
+                                <option value="F2">FLARE II</option>
+                                <option value="F1">FLARE I</option>
+                            </select>
+                        </div>
+                        <div>
+                            <span id="era-filter-label">フレアスキルのカテゴリ</span>
+                            <select id="era-filter" onchange="eraFilterSelectDidChange()">
+                                <option value="-1" selected>全部</option>
+                                <option value="0">CLASSIC</option>
+                                <option value="1">WHITE</option>
+                                <option value="2">GOLD</option>
+                            </select>
+                        </div>
+                        <div id="save-as-image" class="div-options-btn" onclick="saveAsImage()">画像で保存</div>
+                        <div id="explanation" class="div-options-btn" onclick="explanation()">表の説明</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+    <tr>
+        <td class="td-label"><p id="label-95" class="p-tier-label">17.95</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-95"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-90" class="p-tier-label">17.90</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-90"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-85" class="p-tier-label">17.85</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-85"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-80" class="p-tier-label">17.80</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-80"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-75" class="p-tier-label">17.75</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-75"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-70" class="p-tier-label">17.70</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-70"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-65" class="p-tier-label">17.65</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-65"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-60" class="p-tier-label">17.60</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-60"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-55" class="p-tier-label">17.55</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-55"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-50" class="p-tier-label">17.50</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-50"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-45" class="p-tier-label">17.45</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-45"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-40" class="p-tier-label">17.40</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-40"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-35" class="p-tier-label">17.35</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-35"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-30" class="p-tier-label">17.30</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-30"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-25" class="p-tier-label">17.25</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-25"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-20" class="p-tier-label">17.20</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-20"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-15" class="p-tier-label">17.15</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-15"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-10" class="p-tier-label">17.10</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-10"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-5" class="p-tier-label">17.05</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-5"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-0" class="p-tier-label">17.00</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-0"></div></td>
+    </tr>
+
+    
+
+    <tr id="no-rating-row">
+        <td class="td-label"><p id="label-no-rating" class="p-tier-label">データ不足</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-no-rating"></div></td>
+    </tr>
+
+    </table>
+</div>
+
+</div>
+
+
+</html>
+</body>
