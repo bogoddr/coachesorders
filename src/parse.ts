@@ -135,9 +135,26 @@ function parseHTMLFile(filePath: string, songDataMap: Map<string, SongDataEntry>
         }
 
         // Get song title from songDataMap, or use song_id as fallback
-        // Prefer romanized_name if available, otherwise use song_name
+        // Format: "song_name (romanized_name alternate_name)" with appropriate combinations
         const songData = songDataMap.get(song_id);
-        const title = songData?.romanized_name || songData?.song_name || song_id;
+        let title: string;
+        if (songData) {
+            const parts: string[] = [];
+            if (songData.romanized_name) {
+                parts.push(songData.romanized_name);
+            }
+            if (songData.alternate_name) {
+                parts.push(songData.alternate_name);
+            }
+
+            if (parts.length > 0) {
+                title = `${songData.song_name} (${parts.join('/')})`;
+            } else {
+                title = songData.song_name;
+            }
+        } else {
+            title = song_id;
+        }
 
         // Get rating from songdata.js ratings array at the difficulty index
         // If not available, fall back to difficultyList rating
@@ -220,9 +237,95 @@ function main(): void {
         console.log(`  ${difficulty}: ${count}`);
     }
 
-    // Step 5: Export to CSV
+    // Step 5: Append additional charts from additional.csv
+    appendAdditionalCharts(chartDB, dataDir);
+
+    // Step 6: Export to CSV
     const outputDir = path.join(process.cwd(), 'output');
     exportToCSV(chartDB, outputDir);
+}
+
+function appendAdditionalCharts(chartDB: ChartDB, dataDir: string): void {
+    const additionalCSVPath = path.join(dataDir, 'additional.csv');
+
+    if (!fs.existsSync(additionalCSVPath)) {
+        console.log('\nNo additional.csv found, skipping additional charts');
+        return;
+    }
+
+    console.log('\n=== Loading Additional Charts ===');
+
+    try {
+        const csvContent = fs.readFileSync(additionalCSVPath, 'utf-8');
+        const lines = csvContent.trim().split('\n');
+
+        let addedCount = 0;
+
+        for (const line of lines) {
+            // Parse CSV line manually to handle quoted fields
+            const fields = parseCSVLine(line);
+
+            if (fields.length < 5) {
+                console.warn(`Skipping invalid line: ${line}`);
+                continue;
+            }
+
+            const [id, title, difficulty, rating, tier, youtubeURL = ''] = fields;
+
+            // Validate difficulty
+            const validDifficulties = ['bSP', 'BSP', 'DSP', 'ESP', 'CSP', 'BDP', 'DDP', 'EDP', 'CDP'];
+            if (!validDifficulties.includes(difficulty)) {
+                console.warn(`Skipping chart with invalid difficulty: ${difficulty}`);
+                continue;
+            }
+
+            const chart: Chart = {
+                id: id,
+                title: title,
+                difficulty: difficulty as Chart['difficulty'],
+                rating: parseFloat(rating),
+                tier: parseFloat(tier),
+                youtubeURL: youtubeURL.trim(),
+            };
+
+            chartDB.charts.push(chart);
+            addedCount++;
+        }
+
+        console.log(`Added ${addedCount} additional charts from additional.csv`);
+    } catch (error) {
+        console.error('Error loading additional.csv:', error);
+    }
+}
+
+function parseCSVLine(line: string): string[] {
+    const fields: string[] = [];
+    let currentField = '';
+    let inQuotes = false;
+
+    for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+
+        if (char === '"') {
+            // Check if it's an escaped quote
+            if (inQuotes && line[i + 1] === '"') {
+                currentField += '"';
+                i++; // Skip next quote
+            } else {
+                inQuotes = !inQuotes;
+            }
+        } else if (char === ',' && !inQuotes) {
+            fields.push(currentField);
+            currentField = '';
+        } else {
+            currentField += char;
+        }
+    }
+
+    // Push the last field
+    fields.push(currentField);
+
+    return fields;
 }
 
 function sanitizeCSVField(field: string | number): string {
