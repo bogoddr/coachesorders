@@ -221,7 +221,7 @@ function appendAdditionalCharts(chartDB, dataDir) {
                 console.warn(`Skipping invalid line: ${line}`);
                 continue;
             }
-            const [id, title, difficulty, rating, tier, youtubeURL = ''] = fields;
+            const [id, youtubeURL, rating, tier = '', title, difficulty,] = fields;
             // Validate difficulty
             const validDifficulties = ['bSP', 'BSP', 'DSP', 'ESP', 'CSP', 'BDP', 'DDP', 'EDP', 'CDP'];
             if (!validDifficulties.includes(difficulty)) {
@@ -230,11 +230,11 @@ function appendAdditionalCharts(chartDB, dataDir) {
             }
             const chart = {
                 id: id,
+                youtubeURL: youtubeURL.trim(),
                 title: title,
-                difficulty: difficulty,
                 rating: parseFloat(rating),
                 tier: parseFloat(tier),
-                youtubeURL: youtubeURL.trim(),
+                difficulty: difficulty,
             };
             chartDB.charts.push(chart);
             addedCount++;
