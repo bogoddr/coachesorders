@@ -1,0 +1,316 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/fav/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:image" content="http://3icecream.com/fav/android-chrome-256x256.png" />
+<meta property="og:image:secure_url" content="https://3icecream.com/fav/android-chrome-256x256.png" />
+
+
+<title>LEVEL 19 ダブルプレイ 難易度表 - 三倍 Ice Cream</title>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+<LINK rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Inconsolata'/>
+<LINK rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/earlyaccess/sawarabigothic.css'/>
+<link rel="stylesheet" type="text/css" href="/css/difficulty_list.css">
+<link rel="stylesheet" type="text/css" href="/css/m_difficulty_list.css">
+<link rel="stylesheet" type="text/css" href="/css/jp_difficulty_list.css">
+<link rel="stylesheet" type="text/css" href="/css/song_selector.css">
+<link rel="stylesheet" type="text/css" href="/css/common.css">
+<link rel="stylesheet" type="text/css" href="/css/m_common.css">
+<link rel="stylesheet" type="text/css" href="/css/jp_common.css">
+<link rel="stylesheet" type="text/css" href="/css/themes/default.css">
+<link rel="stylesheet" type="text/css" href="/css/song_details_ddr.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/lib/html2canvas.min.js"></script>
+<script src="/lib/sweetalert2.all.min.js"></script>
+
+<script src="/js/difficulty_list.js"></script>
+<script src="/js/songdata.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/arcade_compare.js"></script>
+<script src="/js/autocomplete.js"></script>
+
+<script src="/js/songdata_loader.js"></script>
+<script src="/js/score_loader.js"></script>
+<script src="/js/song_selector.js"></script>
+
+<script type="text/javascript">
+   var xpstr_common = {VERY_RECENTLY:"ごく最近",n_MINS_AGO:"{n}分前",n_HOURS_AGO:"{n}時間前",n_DAYS_AGO:"{n}日前",n_YEARS_AGO:"{n}年前",SOME_TIME_IN_THE_FUTURE:"将来いつか",SHORT_MONTH_1:"1",SHORT_MONTH_2:"2",SHORT_MONTH_3:"3",SHORT_MONTH_4:"4",SHORT_MONTH_5:"5",SHORT_MONTH_6:"6",SHORT_MONTH_7:"7",SHORT_MONTH_8:"8",SHORT_MONTH_9:"9",SHORT_MONTH_10:"10",SHORT_MONTH_11:"11",SHORT_MONTH_12:"12",SHORT_DAY_OF_WEEK_0:"日",SHORT_DAY_OF_WEEK_1:"月",SHORT_DAY_OF_WEEK_2:"火",SHORT_DAY_OF_WEEK_3:"水",SHORT_DAY_OF_WEEK_4:"木",SHORT_DAY_OF_WEEK_5:"金",SHORT_DAY_OF_WEEK_6:"土",DATE_FORMAT_y_m_d:"{y}年{m}月{d}日",DATE_FORMAT_w_y_m_d_h_M_s_tz:"{y}年{m}月{d}日({w}) {h}:{M}:{s} {tz}",NO_SCORES_TO_SHOW:"スコアなし",LOADING_MSG:"少しお待ちください",SINGLES_TOOLTIP:"シングルプレイスコア表示",DOUBLES_TOOLTIP:"ダブルプレイスコア表示",UNKNOWN_TITLE:"曲名不明",UNKNOWN_ARTIST:"アーティスト不明",DDR_VERSION_0:"?",DDR_VERSION_1:"1st",DDR_VERSION_2:"2nd",DDR_VERSION_3:"3rd",DDR_VERSION_4:"4th",DDR_VERSION_5:"5th",DDR_VERSION_6:"MAX",DDR_VERSION_7:"MAX2",DDR_VERSION_8:"Extreme",DDR_VERSION_9:"SuperNOVA",DDR_VERSION_10:"SuperNOVA2",DDR_VERSION_11:"X",DDR_VERSION_12:"X2",DDR_VERSION_13:"X3 vs 2nd",DDR_VERSION_14:"2013",DDR_VERSION_15:"2014",DDR_VERSION_16:"A",DDR_VERSION_17:"A20",DDR_VERSION_18:"A20 PLUS",DDR_VERSION_19:"A3",DDR_VERSION_20:"WORLD",DDR_ERA_0:"CLASSIC",DDR_ERA_1:"WHITE",DDR_ERA_2:"GOLD",DIFF_0:"習",DIFF_1:"楽",DIFF_2:"踊",DIFF_3:"激",DIFF_4:"鬼",DIFF_5:"楽",DIFF_6:"踊",DIFF_7:"激",DIFF_8:"鬼",MSG_SWITCH_TO_SP_VIEW:"シングルプレイスコア表示へ変更？",MSG_SWITCH_TO_DP_VIEW:"ダブルプレイスコア表示へ変更？",SWITCH_SPDP_VIEW_ERROR_MSG:"エラー発生。後でもう一度試してください。",SWITCH:"変更",CLICK_TO_ADD_SCORE:"クリックしてスコアを入れる",NO_SCORE:"未プレイ",TIER_0:"Expert 1",TIER_1:"Expert 2",TIER_2:"Expert 3",TIER_3:"Expert 4",TIER_4:"Expert 5",TIER_5:"Master 1",TIER_6:"Master 2",TIER_7:"Master 3",TIER_8:"Master 4",TIER_9:"Master 5",TIER_10:"Legend 1",TIER_11:"Legend 2",TIER_12:"Legend 3",TIER_13:"Legend 4",TIER_14:"Legend 5",APP_LOGGING_IN_MSG:"ログイン中...",FLARE_SKILL_0:"-",FLARE_SKILL_1:"I",FLARE_SKILL_2:"II",FLARE_SKILL_3:"III",FLARE_SKILL_4:"IV",FLARE_SKILL_5:"V",FLARE_SKILL_6:"VI",FLARE_SKILL_7:"VII",FLARE_SKILL_8:"VIII",FLARE_SKILL_9:"IX",FLARE_SKILL_10:"EX",OKAY:"保存",CANCEL:"やめる",SEARCH:"検索",LEVEL_n:"LEVEL {n}",SINGLE_PLAY:"シングルプレイ",DOUBLE_PLAY:"ダブルプレイ",ERR_WRONG_PASSWORD:"入力したパスワードが間違っています。もう一度試してみてください。",};
+</script>
+
+<script type="text/javascript">
+
+const COMPARE_MODE = 'ARCADE';
+const showRomanizedTitles = false;
+
+let difficultyList = {"186dd6DQq891Ib9Ilq8Qbo8lIqb0Qoll/8":{"tier":0,"rating":-0.346234},"1Dl19idl0i0qiqidbDIIbQddiP6o11PP/8":{"tier":0.2,"rating":0.130138},"606b9d6OiliId69bO9Odi6qq8o8Qd0dq/8":{"tier":0.4,"rating":0.253707},"6bid6d9qPQ80DOqiidQQ891o6Od8801l/8":{"tier":0.5,"rating":0.395402},"9i0q91lPPiO61b9P891O1i86iOP1I08O/8":{"tier":0.6,"rating":0.478468},"bIlqP91O9ld1lqlq6qoq9OiPdqIDPP0l/8":{"tier":0.3,"rating":0.190371},"dlq91b19ld10IdIqQ9q99O8QDOOi18dq/8":{"tier":0.3,"rating":0.192312},"I0dOli6do1l1008I8PllOq8DoOoIO8oq/8":{"tier":0.2,"rating":0.183376},"PO9Pl1q896bDDl89qQb98D80DQoPio1I/8":{"tier":0.7,"rating":0.571737},"q6di1DQbi88i9QlPol1iIPbb8lP1qP1b/8":{"tier":0.1,"rating":-0.0902059},"QiPiIb8I99loq8loIq91iP6l1OOoq8oq/8":{"tier":0.1,"rating":-0.0813007},"QldQ19DlqDbq1l091q0l1Q1qD6ldQ6qi/8":{"tier":0.1,"rating":-0.155822}};
+let rawMetadata = [{"song_id":"186dd6DQq891Ib9Ilq8Qbo8lIqb0Qoll","difficulty":4,"youtube_id":"Ah_9tjigaHM","has_sm":1},{"song_id":"186dd6DQq891Ib9Ilq8Qbo8lIqb0Qoll","difficulty":8,"youtube_id":"88P-xN7NjnI","has_sm":1},{"song_id":"1Dl19idl0i0qiqidbDIIbQddiP6o11PP","difficulty":4,"youtube_id":"s3-fp5Mnme4","has_sm":1},{"song_id":"1Dl19idl0i0qiqidbDIIbQddiP6o11PP","difficulty":8,"youtube_id":"L4frSMQaLwc","has_sm":1},{"song_id":"606b9d6OiliId69bO9Odi6qq8o8Qd0dq","difficulty":4,"youtube_id":"1QggL_KDOi4","has_sm":1},{"song_id":"606b9d6OiliId69bO9Odi6qq8o8Qd0dq","difficulty":8,"youtube_id":"Wa27xS6_14A","has_sm":1},{"song_id":"6bid6d9qPQ80DOqiidQQ891o6Od8801l","difficulty":4,"youtube_id":"Az6OF7d8Umg","has_sm":1},{"song_id":"6bid6d9qPQ80DOqiidQQ891o6Od8801l","difficulty":8,"youtube_id":"sQ9AT-7bifo","has_sm":1},{"song_id":"9i0q91lPPiO61b9P891O1i86iOP1I08O","difficulty":4,"youtube_id":"6MDgYu4mqus","has_sm":1},{"song_id":"9i0q91lPPiO61b9P891O1i86iOP1I08O","difficulty":8,"youtube_id":"XCtuVmE_EEc","has_sm":1},{"song_id":"bIlqP91O9ld1lqlq6qoq9OiPdqIDPP0l","difficulty":4,"youtube_id":"xwdTVgOTyfY","has_sm":1},{"song_id":"bIlqP91O9ld1lqlq6qoq9OiPdqIDPP0l","difficulty":8,"youtube_id":"hlLv0A0m3OI","has_sm":1},{"song_id":"dlq91b19ld10IdIqQ9q99O8QDOOi18dq","difficulty":4,"youtube_id":"vmdCys_abSk","has_sm":1},{"song_id":"dlq91b19ld10IdIqQ9q99O8QDOOi18dq","difficulty":8,"youtube_id":"2Vl6rS7NUnU","has_sm":1},{"song_id":"I0dOli6do1l1008I8PllOq8DoOoIO8oq","difficulty":4,"youtube_id":"fBz9B97Ry0E","has_sm":null},{"song_id":"I0dOli6do1l1008I8PllOq8DoOoIO8oq","difficulty":8,"youtube_id":"dkiCOBMGyGU","has_sm":null},{"song_id":"PO9Pl1q896bDDl89qQb98D80DQoPio1I","difficulty":4,"youtube_id":"cnTky49oBVA","has_sm":1},{"song_id":"PO9Pl1q896bDDl89qQb98D80DQoPio1I","difficulty":8,"youtube_id":"1ctDcwKgco0","has_sm":1},{"song_id":"q6di1DQbi88i9QlPol1iIPbb8lP1qP1b","difficulty":8,"youtube_id":"V-8Iq8S-voM","has_sm":1},{"song_id":"QiPiIb8I99loq8loIq91iP6l1OOoq8oq","difficulty":4,"youtube_id":"42TVg2IzvNI","has_sm":1},{"song_id":"QiPiIb8I99loq8loIq91iP6l1OOoq8oq","difficulty":8,"youtube_id":"bDsYwK928Ug","has_sm":1},{"song_id":"QldQ19DlqDbq1l091q0l1Q1qD6ldQ6qi","difficulty":4,"youtube_id":"mp4hMBlQNA4","has_sm":1},{"song_id":"QldQ19DlqDbq1l091q0l1Q1qD6ldQ6qi","difficulty":8,"youtube_id":"w9kn0QVMKvs","has_sm":1}];
+let scores = [];
+let chartMetadata = {};
+
+let indexedAllCharts;
+let indexedAllScores;
+
+const viewSpdp = 1;
+const viewRating = 19;
+const calculationUnixtimeUtcSec = 1761065891;
+
+let xpstr = {
+    RENDERING_IMAGE_DIALOG_TITLE : "画像生成中…",
+};
+
+$(document).ready(function (e) {
+
+    initData();
+    renderDifficultyList();
+    initAutocomplete($('#song-search'));
+
+    let versionStr = "バージョン 11、リビジョン 1";
+
+    let timeStr = "最近のアップデート：{time}".replace('{time}', humanDateTimeFromUnixSec(calculationUnixtimeUtcSec));
+
+    let historyStr = "過去の記録を見る";
+
+    $('#list-version-info').html(versionStr + ' • ' + timeStr + ' • <a class="div-options-btn" href="/difficulty_list/history/19?spdp=1">' + historyStr + '</a>');
+});
+
+$(document).click(function(event) {
+    dismissAutocomplete();
+});
+
+function dismissAutocomplete() {
+    let divRes = $('#song-search-results');
+    divRes.empty();
+    divRes.hide();
+}
+
+function explanation() {
+    swal.fire({
+        title: "表の説明",
+        html: "この表はレベル毎にサブ難易度（ランク）に分けています。ランクが高い譜面は大体ランクが低い譜面より比較的高いスコアを獲得しづらい仕様になっています。<p>サブ難易度は三倍Ice Creamへアップロードされたスコアを利用したアルゴリズムによって作成されています。アルゴリズムは2譜面（AとB）を比較します。もしAのスコアがBより低いダンサーが多ければ、アルゴリズムはAをBより高いサブ難易度へ格付けします。<p>尚、このアルゴリズムは開発中であり、一部のランクは不正確な場合もあります。特にユーザーのスコアが少ない譜面（例：新しい譜面）はランクが不安定であります。ご了承お願いします。",
+    });
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+
+
+<div id="main-flexbox">
+
+<div id="song-info-container" class="bg-muted-light">
+    <a href="#" id="song-details-link" target="_blank"><div id="big-jacket-container"><img id="big-jacket" src="/img/no_banner.png"></div></a>
+    <div id="song-info">
+        <p id="song-title" class="outlined color-vibrant-main">曲を選択</p>
+        <p id="song-diff" class="color-vibrant-dark"></p>
+    </div>
+    <div id="song-toolbar">
+        <a href="" id="youtube-link" target="_blank" class="color-vibrant-dark" style="display:none"><p>Youtubeで見る</p></a>
+        <a href="" id="stepchart-link" target="_blank" class="color-vibrant-dark" style="display:none"><p>譜面を見る</p></a>
+        <input id="song-search" value="" placeholder="検索"></input>
+        <div id="song-search-results"></div>
+    </div>
+</div>
+
+<div id="difficulty-list-container">
+
+    <table id="difficulty-list-table">
+
+        <tr>
+            <td colspan="2">
+                <div id="difficulty-list-header">
+                    <div id="logos-container">
+                        <img id="printable-logo-header" src="/img/full_logo_with_url.png">
+                        <a href="/"><div id="main-logo-container"><img id="logo-header" src="/img/full_logo.png"></div></a>
+                    </div>
+                    
+                    <select id="select-level" onchange="levelHasChanged()">
+                        
+                        <option value="1">LEVEL 1</option>
+                        
+                        <option value="2">LEVEL 2</option>
+                        
+                        <option value="3">LEVEL 3</option>
+                        
+                        <option value="4">LEVEL 4</option>
+                        
+                        <option value="5">LEVEL 5</option>
+                        
+                        <option value="6">LEVEL 6</option>
+                        
+                        <option value="7">LEVEL 7</option>
+                        
+                        <option value="8">LEVEL 8</option>
+                        
+                        <option value="9">LEVEL 9</option>
+                        
+                        <option value="10">LEVEL 10</option>
+                        
+                        <option value="11">LEVEL 11</option>
+                        
+                        <option value="12">LEVEL 12</option>
+                        
+                        <option value="13">LEVEL 13</option>
+                        
+                        <option value="14">LEVEL 14</option>
+                        
+                        <option value="15">LEVEL 15</option>
+                        
+                        <option value="16">LEVEL 16</option>
+                        
+                        <option value="17">LEVEL 17</option>
+                        
+                        <option value="18">LEVEL 18</option>
+                        
+                        <option value="19" selected>LEVEL 19</option>
+                        
+                    </select>
+
+
+                    <select id="select-spdp" onchange="spdpHasChanged()">
+                        <option value="0">シングルプレイ</option>
+                        <option value="1" selected>ダブルプレイ</option>
+                    </select>
+
+                    <span id="list-version-info"></span>
+
+                    <div id="difficulty-list-options">
+                        <div style="display:none;">
+                            <span id="lights-label">ランク除外</span>
+                            <select id="lights" onchange="lightsSelectDidChange()">
+                                <option value="0" selected>なし</option>
+                                <option value="6">MFC</option>
+                                <option value="5">PFC</option>
+                                <option value="4">GFC</option>
+                                <option value="3">FC</option>
+                                <option value="2">LIFE4</option>
+                                <option value="AAA">AAA</option>
+                                <option value="AA">AA+</option>
+                                <option value="1">クリア</option>
+                                <option value="F10">FLARE EX</option>
+                                <option value="F9">FLARE IX</option>
+                                <option value="F8">FLARE VIII</option>
+                                <option value="F7">FLARE VII</option>
+                                <option value="F6">FLARE VI</option>
+                                <option value="F5">FLARE V</option>
+                                <option value="F4">FLARE IV</option>
+                                <option value="F3">FLARE III</option>
+                                <option value="F2">FLARE II</option>
+                                <option value="F1">FLARE I</option>
+                            </select>
+                        </div>
+                        <div>
+                            <span id="era-filter-label">フレアスキルのカテゴリ</span>
+                            <select id="era-filter" onchange="eraFilterSelectDidChange()">
+                                <option value="-1" selected>全部</option>
+                                <option value="0">CLASSIC</option>
+                                <option value="1">WHITE</option>
+                                <option value="2">GOLD</option>
+                            </select>
+                        </div>
+                        <div id="save-as-image" class="div-options-btn" onclick="saveAsImage()">画像で保存</div>
+                        <div id="explanation" class="div-options-btn" onclick="explanation()">表の説明</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+    <tr>
+        <td class="td-label"><p id="label-90" class="p-tier-label">19.90</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-90"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-80" class="p-tier-label">19.80</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-80"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-70" class="p-tier-label">19.70</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-70"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-60" class="p-tier-label">19.60</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-60"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-50" class="p-tier-label">19.50</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-50"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-40" class="p-tier-label">19.40</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-40"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-30" class="p-tier-label">19.30</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-30"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-20" class="p-tier-label">19.20</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-20"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-10" class="p-tier-label">19.10</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-10"></div></td>
+    </tr>
+
+    
+
+    <tr>
+        <td class="td-label"><p id="label-0" class="p-tier-label">19.00</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-0"></div></td>
+    </tr>
+
+    
+
+    <tr id="no-rating-row">
+        <td class="td-label"><p id="label-no-rating" class="p-tier-label">データ不足</p></td>
+        <td class="td-jackets"><div class="div-jackets" id="jackets-no-rating"></div></td>
+    </tr>
+
+    </table>
+</div>
+
+</div>
+
+
+</html>
+</body>

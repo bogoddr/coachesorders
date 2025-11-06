@@ -11,7 +11,7 @@ export interface Chart {
     rating: number;
     tier: number;
     // These correspond to the "difficulty" value in the rawMetadata array in the html.
-    difficulty: 'bSP' | 'BSP' | 'DSP' | 'ESP' | 'CSP' | 'BDP' | 'DDP' | 'EDP' | 'CDP';
+    difficulty: '0 bSP' | '0 BSP' | '0 DSP' | '0 ESP' | '0 CSP' | '1 BDP' | '1 DDP' | '1 EDP' | '1 CDP';
     youtubeURL: string;
 }
 
@@ -43,15 +43,15 @@ interface SongDataEntry {
 
 // Map difficulty numbers to difficulty strings
 const DIFFICULTY_MAP: Record<number, Chart['difficulty']> = {
-    0: 'bSP', // Beginner Single Play
-    1: 'BSP', // Basic Single Play
-    2: 'DSP', // Difficult Single Play
-    3: 'ESP', // Expert Single Play
-    4: 'CSP', // Challenge Single Play
-    5: 'BDP', // Basic Double Play
-    6: 'DDP', // Difficult Double Play
-    7: 'EDP', // Expert Double Play
-    8: 'CDP', // Challenge Double Play
+    0: '0 bSP', // Beginner Single Play
+    1: '0 BSP', // Basic Single Play
+    2: '0 DSP', // Difficult Single Play
+    3: '0 ESP', // Expert Single Play
+    4: '0 CSP', // Challenge Single Play
+    5: '1 BDP', // Basic Double Play
+    6: '1 DDP', // Difficult Double Play
+    7: '1 EDP', // Expert Double Play
+    8: '1 CDP', // Challenge Double Play
 };
 
 function loadSongData(dataDir: string): Map<string, SongDataEntry> {
@@ -273,7 +273,7 @@ function appendAdditionalCharts(chartDB: ChartDB, dataDir: string): void {
             const [id, youtubeURL, rating, tier = '', title, difficulty,] = fields;
 
             // Validate difficulty
-            const validDifficulties = ['bSP', 'BSP', 'DSP', 'ESP', 'CSP', 'BDP', 'DDP', 'EDP', 'CDP'];
+            const validDifficulties = ['0 bSP', '0 BSP', '0 DSP', '0 ESP', '0 CSP', '1 BDP', '1 DDP', '1 EDP', '1 CDP'];
             if (!validDifficulties.includes(difficulty)) {
                 console.warn(`Skipping chart with invalid difficulty: ${difficulty}`);
                 continue;

@@ -77,11 +77,6 @@ async function fetchAndSave() {
         console.error('Usage: DIFFICULTY=<1-19> npm run fetch');
         process.exit(1);
     }
-    const difficultyNum = parseInt(difficulty, 10);
-    if (isNaN(difficultyNum) || difficultyNum < 1 || difficultyNum > 19) {
-        console.error('Error: DIFFICULTY must be a number between 1 and 19');
-        process.exit(1);
-    }
     // Step 2: Fetch HTML from the URL
     const url = `https://3icecream.com/difficulty_list/${difficulty}`;
     console.log(`Fetching ${url}...`);

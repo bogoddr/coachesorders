@@ -6,7 +6,7 @@ export interface Chart {
     title: string;
     rating: number;
     tier: number;
-    difficulty: 'bSP' | 'BSP' | 'DSP' | 'ESP' | 'CSP' | 'BDP' | 'DDP' | 'EDP' | 'CDP';
+    difficulty: '0 bSP' | '0 BSP' | '0 DSP' | '0 ESP' | '0 CSP' | '1 BDP' | '1 DDP' | '1 EDP' | '1 CDP';
     youtubeURL: string;
 }
 //# sourceMappingURL=parse.d.ts.map
