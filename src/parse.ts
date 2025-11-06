@@ -349,19 +349,22 @@ function exportToCSV(chartDB: ChartDB, outputDir: string): void {
         console.log(`Created directory: ${outputDir}`);
     }
 
+    //PO9Pl1q896bDDl89qQb98D80DQoPio1I	https://www.youtube.com/watch?v=cnTky49oBVA	19	0.7	ENDYMION	CSP
+    //ID	YouTube URL	Rating	Tier	Title	Difficulty
+
     // Create CSV header
-    const headers = ['ID', 'Title', 'Difficulty', 'Rating', 'Tier', 'YouTube URL'];
+    const headers = ['ID', 'YouTube URL', 'Rating', 'Tier', 'Title', 'Difficulty'];
     const csvLines: string[] = [headers.join(',')];
 
     // Add each chart as a CSV row
     for (const chart of chartDB.charts) {
         const row = [
             sanitizeCSVField(chart.id),
-            sanitizeCSVField(chart.title),
-            sanitizeCSVField(chart.difficulty),
+            sanitizeCSVField(chart.youtubeURL),
             sanitizeCSVField(chart.rating),
             sanitizeCSVField(chart.tier),
-            sanitizeCSVField(chart.youtubeURL),
+            sanitizeCSVField(chart.title),
+            sanitizeCSVField(chart.difficulty),
         ];
         csvLines.push(row.join(','));
     }
