@@ -13,31 +13,26 @@ export function Chart(props: ChartProps) {
     const difficultyColors: Record<ChartProps['difficulty'], string> = {
         BSP: 'yellow',
         DSP: 'red',
-        ESP: 'green',
-        CSP: 'purple',
+        ESP: '#33bb33',
+        CSP: '#dd33dd',
     };
 
     const borderColor = difficultyColors[props.difficulty];
 
     return (
-        <a href={props.youtubeURL} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <a href={props.youtubeURL} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
             <div style={{
-                border: `4px solid ${borderColor}`,
-                padding: '8px',
-                borderRadius: '4px',
-                display: 'inline-block',
+                border: `6px solid ${borderColor}`,
+                padding: '0px',
+                borderRadius: '6px',
+                width: '100%',
+                boxSizing: 'border-box',
             }}>
                 <img
                     src={`https://3icecream.com/img/banners/${props.id}.jpg`}
                     alt={props.title}
-                    style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
+                    style={{ display: 'block', width: '100%', height: 'auto' }}
                 />
-                <div style={{ marginTop: '8px' }}>
-                    [{props.difficulty}.{props.tier}] {props.title}
-                </div>
-                <div style={{ marginTop: '8px' }}>
-                    {props.score ? props.score + ',000' : 'no pass!'}
-                </div>
             </div>
         </a>
     );
